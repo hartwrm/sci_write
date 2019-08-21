@@ -1,2 +1,174 @@
   [1m[35m (400.3ms)[0m  [1m[35mCREATE DATABASE "sci_write_development" ENCODING = 'unicode'[0m
   [1m[35m (301.5ms)[0m  [1m[35mCREATE DATABASE "sci_write_test" ENCODING = 'unicode'[0m
+  [1m[35m (32.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3614364771039202425)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3614364771039202425)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3614364771039202425)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePrompts (20190821012014)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (18.9ms)[0m  [1m[35mCREATE TABLE "prompts" ("id" bigserial primary key, "writing_prompt" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (2.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190821012014"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCrowdStories (20190821012323)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "crowd_stories" ("id" bigserial primary key, "content" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190821012323"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-21 01:26:10.163558"], ["updated_at", "2019-08-21 01:26:10.163558"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3614364771039202425)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (2.8ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "It’s not really a fly. If you swat it, they’ll just fine you and send two more."], ["created_at", "2019-08-21 01:33:13.364718"], ["updated_at", "2019-08-21 01:33:13.364718"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.3ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "We’re headed to Madam Maxime’s at the edge of the universe."], ["created_at", "2019-08-21 01:33:13.377287"], ["updated_at", "2019-08-21 01:33:13.377287"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.4ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "Why grieve when you can keep your loved one encased in Forever Glass™?"], ["created_at", "2019-08-21 01:33:13.381621"], ["updated_at", "2019-08-21 01:33:13.381621"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.4ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "A group of intelligence-enhanced lab animals must find a way to communicate before their turn in the euthanization chamber."], ["created_at", "2019-08-21 01:33:13.386993"], ["updated_at", "2019-08-21 01:33:13.386993"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.8ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "It’s not really a fly. If you swat it, they’ll just fine you and send two more."], ["created_at", "2019-08-21 01:33:30.158571"], ["updated_at", "2019-08-21 01:33:30.158571"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.4ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "We’re headed to Madam Maxime’s at the edge of the universe."], ["created_at", "2019-08-21 01:33:30.165252"], ["updated_at", "2019-08-21 01:33:30.165252"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.4ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "Why grieve when you can keep your loved one encased in Forever Glass™?"], ["created_at", "2019-08-21 01:33:30.170791"], ["updated_at", "2019-08-21 01:33:30.170791"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.3ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "A group of intelligence-enhanced lab animals must find a way to communicate before their turn in the euthanization chamber."], ["created_at", "2019-08-21 01:33:30.178046"], ["updated_at", "2019-08-21 01:33:30.178046"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.6ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "It’s not really a fly. If you swat it, they’ll just fine you and send two more."], ["created_at", "2019-08-21 01:33:59.406420"], ["updated_at", "2019-08-21 01:33:59.406420"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.3ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "We’re headed to Madam Maxime’s at the edge of the universe."], ["created_at", "2019-08-21 01:33:59.412275"], ["updated_at", "2019-08-21 01:33:59.412275"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.4ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "Why grieve when you can keep your loved one encased in Forever Glass™?"], ["created_at", "2019-08-21 01:33:59.418833"], ["updated_at", "2019-08-21 01:33:59.418833"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.6ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "A group of intelligence-enhanced lab animals must find a way to communicate before their turn in the euthanization chamber."], ["created_at", "2019-08-21 01:33:59.428846"], ["updated_at", "2019-08-21 01:33:59.428846"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCrowdStory Create (1.1ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Your Story Here"], ["created_at", "2019-08-21 01:33:59.461664"], ["updated_at", "2019-08-21 01:33:59.461664"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/prompts" for ::1 at 2019-08-20 21:35:05 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 35ms (Views: 23.6ms | ActiveRecord: 9.3ms | Allocations: 5747)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (5028.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "sci_write_development"[0m
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (160.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "sci_write_development"[0m
+  [1m[35m (146.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "sci_write_test"[0m
+  [1m[35m (413.1ms)[0m  [1m[35mCREATE DATABASE "sci_write_development" ENCODING = 'unicode'[0m
+  [1m[35m (322.4ms)[0m  [1m[35mCREATE DATABASE "sci_write_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "crowd_stories" CASCADE[0m
+  [1m[35m (28.8ms)[0m  [1m[35mCREATE TABLE "crowd_stories" ("id" bigserial primary key, "content" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "prompts" CASCADE[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "prompts" ("id" bigserial primary key, "writing_prompt" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (13.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190821012323)[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190821012014);
+
+[0m
+  [1m[35m (26.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-21 01:36:58.180109"], ["updated_at", "2019-08-21 01:36:58.180109"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "f37356d9d4eb75a5931ad707b864b77835a39fa6"], ["created_at", "2019-08-21 01:36:58.192809"], ["updated_at", "2019-08-21 01:36:58.192809"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "crowd_stories" CASCADE[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE "crowd_stories" ("id" bigserial primary key, "content" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "prompts" CASCADE[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "prompts" ("id" bigserial primary key, "writing_prompt" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190821012323)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190821012014);
+
+[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-21 01:36:58.291530"], ["updated_at", "2019-08-21 01:36:58.291530"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-08-21 01:36:58.312889"], ["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "f37356d9d4eb75a5931ad707b864b77835a39fa6"], ["created_at", "2019-08-21 01:36:58.331126"], ["updated_at", "2019-08-21 01:36:58.331126"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.9ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "It’s not really a fly. If you swat it, they’ll just fine you and send two more."], ["created_at", "2019-08-21 01:36:58.409895"], ["updated_at", "2019-08-21 01:36:58.409895"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.5ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "We’re headed to Madam Maxime’s at the edge of the universe."], ["created_at", "2019-08-21 01:36:58.421805"], ["updated_at", "2019-08-21 01:36:58.421805"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.3ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "Why grieve when you can keep your loved one encased in Forever Glass™?"], ["created_at", "2019-08-21 01:36:58.429256"], ["updated_at", "2019-08-21 01:36:58.429256"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Create (0.3ms)[0m  [1m[32mINSERT INTO "prompts" ("writing_prompt", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["writing_prompt", "A group of intelligence-enhanced lab animals must find a way to communicate before their turn in the euthanization chamber."], ["created_at", "2019-08-21 01:36:58.434104"], ["updated_at", "2019-08-21 01:36:58.434104"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCrowdStory Create (2.3ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Your Story Here"], ["created_at", "2019-08-21 01:36:58.457387"], ["updated_at", "2019-08-21 01:36:58.457387"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/prompts" for ::1 at 2019-08-20 21:37:21 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 8.5ms | ActiveRecord: 8.1ms | Allocations: 4850)
+
+
+Started GET "/crowd_stories" for ::1 at 2019-08-20 21:37:49 -0400
+Processing by CrowdStoriesController#index as */*
+  [1m[36mCrowdStory Load (3.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories"[0m
+  ↳ app/controllers/crowd_stories_controller.rb:8:in `index'
+Completed 200 OK in 47ms (Views: 20.5ms | ActiveRecord: 23.6ms | Allocations: 3894)
+
+

@@ -1,0 +1,2 @@
+class CrowdStory < ApplicationRecord
+end
