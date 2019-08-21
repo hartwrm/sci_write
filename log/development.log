@@ -1,0 +1,2 @@
+  [1m[35m (400.3ms)[0m  [1m[35mCREATE DATABASE "sci_write_development" ENCODING = 'unicode'[0m
+  [1m[35m (301.5ms)[0m  [1m[35mCREATE DATABASE "sci_write_test" ENCODING = 'unicode'[0m
