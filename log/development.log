@@ -939,3 +939,56 @@ Processing by CrowdStoriesController#create as */*
 Completed 201 Created in 18ms (Views: 0.7ms | ActiveRecord: 2.8ms | Allocations: 3738)
 
 
+Started PUT "/prompts/3/crowd_stories?crowd_story/9=We%20were%20on%20the%20edge%20of%20the%20desert%20when%20the%20drugs%20began%20to%20take%20hold..." for ::1 at 2019-08-21 23:10:40 -0400
+  
+ActionController::RoutingError (No route matches [PUT] "/prompts/3/crowd_stories"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PUT "/prompts/3/crowd_stories/9?crowd_story[story]=We%20were%20on%20the%20edge%20of%20the%20desert%20when%20the%20drugs%20began%20to%20take%20hold..." for ::1 at 2019-08-21 23:11:34 -0400
+Processing by CrowdStoriesController#update as */*
+  Parameters: {"crowd_story"=>{"story"=>"We were on the edge of the desert when the drugs began to take hold..."}, "prompt_id"=>"3", "id"=>"9"}
+  [1m[36mCrowdStory Load (0.5ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/crowd_stories_controller.rb:45:in `set_crowd_story'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/crowd_stories_controller.rb:30:in `update'
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/crowd_stories_controller.rb:30:in `update'
+  [1m[36mCrowdStory Update (1.1ms)[0m  [1m[33mUPDATE "crowd_stories" SET "story" = $1, "updated_at" = $2 WHERE "crowd_stories"."id" = $3[0m  [["story", "We were on the edge of the desert when the drugs began to take hold..."], ["updated_at", "2019-08-22 03:11:34.703429"], ["id", 9]]
+  ↳ app/controllers/crowd_stories_controller.rb:30:in `update'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/crowd_stories_controller.rb:30:in `update'
+Completed 200 OK in 24ms (Views: 0.7ms | ActiveRecord: 2.7ms | Allocations: 4143)
+
+
+Started GET "/prompts/3" for ::1 at 2019-08-21 23:11:57 -0400
+Processing by PromptsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/controllers/prompts_controller.rb:13:in `show'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 1623)
+
+
