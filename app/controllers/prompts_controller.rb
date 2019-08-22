@@ -24,19 +24,6 @@ class PromptsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /prompts/1
-  def update
-    if @prompt.update(prompt_params)
-      render json: @prompt
-    else
-      render json: @prompt.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /prompts/1
-  def destroy
-    @prompt.destroy
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

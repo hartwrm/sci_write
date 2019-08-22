@@ -242,3 +242,428 @@ Processing by PromptsController#index as HTML
 Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1277)
 
 
+Started GET "/prompts" for ::1 at 2019-08-21 18:33:16 -0400
+  [1m[35m (11.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (2.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 48ms (Views: 28.8ms | ActiveRecord: 16.7ms | Allocations: 4858)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 18:37:15 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.6ms | Allocations: 1278)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 18:37:45 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 13.0ms | ActiveRecord: 10.3ms | Allocations: 4856)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 18:38:42 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (3.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 39ms (Views: 33.6ms | ActiveRecord: 3.1ms | Allocations: 1279)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 18:41:55 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (2.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 11.9ms | ActiveRecord: 2.7ms | Allocations: 1279)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 18:42:29 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms | Allocations: 1279)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 18:43:53 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 18:44:12 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 18:44:41 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.9ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:17:36 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (1.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 178ms (Views: 164.5ms | ActiveRecord: 1.4ms | Allocations: 1353)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:18:37 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.5ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:23:26 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (1.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 286ms (Views: 278.7ms | ActiveRecord: 1.9ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:23:36 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 71ms (Views: 69.7ms | ActiveRecord: 0.6ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:23:41 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.5ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:26:10 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.4ms | Allocations: 1265)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:26:33 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:28:08 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.5ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:29:32 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.6ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:30:26 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:30:57 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.6ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:31:27 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (2.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 217ms (Views: 209.6ms | ActiveRecord: 2.3ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:32:23 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (1.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 1.2ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:32:37 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (1.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 1.8ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:38:38 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (1.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 1.1ms | Allocations: 1342)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 19:39:44 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.8ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 20:24:54 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 19.8ms | ActiveRecord: 0.9ms | Allocations: 1343)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 20:26:34 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 20:26:57 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.5ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 20:53:50 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (4.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 4.3ms | Allocations: 1343)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 20:56:46 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.9ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 20:58:28 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.5ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 20:58:58 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.7ms | Allocations: 1268)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:18:39 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.8ms | Allocations: 4362)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:19:32 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 1.0ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:19:42 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:22:59 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.6ms | Allocations: 1264)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3614364771039202425)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeColumnNameInStories (20190822012815)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.0ms)[0m  [1m[35mALTER TABLE "crowd_stories" RENAME COLUMN "content" TO "story"[0m
+  [1m[36mprimary::SchemaMigration Create (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190822012815"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(3614364771039202425)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/prompts" for ::1 at 2019-08-21 21:32:12 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.6ms | Allocations: 4311)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:33:03 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.8ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:33:28 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (1.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 8.3ms | ActiveRecord: 6.3ms | Allocations: 4858)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:34:05 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 1279)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:34:53 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.9ms | Allocations: 1279)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:35:23 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 1279)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:39:12 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.7ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:39:37 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 0.9ms | Allocations: 1264)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:41:01 -0400
+Started GET "/crowd_stories" for 127.0.0.1 at 2019-08-21 21:41:01 -0400
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromptsController#index as */*
+Processing by CrowdStoriesController#index as */*
+  [1m[36mPrompt Load (1.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+  [1m[36mCrowdStory Load (1.9ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories"[0m
+  ↳ app/controllers/crowd_stories_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 8.1ms | ActiveRecord: 7.8ms | Allocations: 5927)
+
+
+Completed 200 OK in 25ms (Views: 8.6ms | ActiveRecord: 13.2ms | Allocations: 9082)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:42:19 -0400
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.6ms | Allocations: 1279)
+
+
+Started GET "/crowd_stories" for 127.0.0.1 at 2019-08-21 21:42:19 -0400
+Processing by CrowdStoriesController#index as */*
+  [1m[36mCrowdStory Load (1.6ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories"[0m
+  ↳ app/controllers/crowd_stories_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 1.6ms | Allocations: 940)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:43:59 -0400
+Started GET "/crowd_stories" for 127.0.0.1 at 2019-08-21 21:43:59 -0400
+Processing by PromptsController#index as */*
+Processing by CrowdStoriesController#index as */*
+  [1m[36mPrompt Load (4.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 4.7ms | Allocations: 1640)
+
+
+  [1m[36mCrowdStory Load (6.0ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories"[0m
+  ↳ app/controllers/crowd_stories_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 4.1ms | ActiveRecord: 6.0ms | Allocations: 2305)
+
+
+Started GET "/prompts" for ::1 at 2019-08-21 21:44:02 -0400
+Processing by PromptsController#index as */*
+Started GET "/crowd_stories" for 127.0.0.1 at 2019-08-21 21:44:02 -0400
+  [1m[36mPrompt Load (2.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 2.1ms | Allocations: 1654)
+
+
+Processing by CrowdStoriesController#index as */*
+  [1m[36mCrowdStory Load (0.4ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories"[0m
+  ↳ app/controllers/crowd_stories_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.4ms | Allocations: 925)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3614364771039202425)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddForeignKeyToStories (20190822020840)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.8ms)[0m  [1m[35mALTER TABLE "crowd_stories" ADD "prompt_id" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190822020840"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3614364771039202425)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCrowdStory Create (5.0ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("story", "created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["story", "Chapter 1: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."], ["created_at", "2019-08-22 02:18:44.173043"], ["updated_at", "2019-08-22 02:18:44.173043"], ["prompt_id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCrowdStory Create (0.3ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("story", "created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["story", "Chapter 2: It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."], ["created_at", "2019-08-22 02:18:44.185348"], ["updated_at", "2019-08-22 02:18:44.185348"], ["prompt_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCrowdStory Create (0.4ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("story", "created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["story", "Prologue: Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."], ["created_at", "2019-08-22 02:18:44.200151"], ["updated_at", "2019-08-22 02:18:44.200151"], ["prompt_id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrompt Load (0.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCrowdStory Create (0.7ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("story", "created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["story", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."], ["created_at", "2019-08-22 02:18:44.207561"], ["updated_at", "2019-08-22 02:18:44.207561"], ["prompt_id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1 LIMIT $2[0m  [["prompt_id", 1], ["LIMIT", 11]]
+Started GET "/prompts" for ::1 at 2019-08-21 22:21:57 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromptsController#index as */*
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/controllers/prompts_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.5ms | Allocations: 5419)
+
+
+Started GET "/crowd_stories" for ::1 at 2019-08-21 22:22:05 -0400
+Processing by CrowdStoriesController#index as */*
+  [1m[36mCrowdStory Load (0.6ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories"[0m
+  ↳ app/controllers/crowd_stories_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 11.7ms | ActiveRecord: 0.6ms | Allocations: 5174)
+
+
