@@ -1,5 +1,5 @@
 class PromptsController < ApplicationController
-  before_action :set_prompt, only: [:show, :update, :destroy]
+  before_action :set_prompt, only: [:show]
 
   # GET /prompts
   def index
@@ -10,19 +10,9 @@ class PromptsController < ApplicationController
 
   # GET /prompts/1
   def show
-    render json: @prompt
+    render json: @prompt.to_json(include: :crowd_stories)
   end
 
-  # POST /prompts
-  def create
-    @prompt = Prompt.new(prompt_params)
-
-    if @prompt.save
-      render json: @prompt, status: :created, location: @prompt
-    else
-      render json: @prompt.errors, status: :unprocessable_entity
-    end
-  end
 
 
   private

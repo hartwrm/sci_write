@@ -16,9 +16,10 @@ class CrowdStoriesController < ApplicationController
   # POST /crowd_stories
   def create
     @crowd_story = CrowdStory.new(crowd_story_params)
+    @crowd_story.prompt_id = params[:prompt_id]
 
     if @crowd_story.save
-      render json: @crowd_story, status: :created, location: @crowd_story
+      render json: @crowd_story, status: :created
     else
       render json: @crowd_story.errors, status: :unprocessable_entity
     end
@@ -46,6 +47,6 @@ class CrowdStoriesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def crowd_story_params
-      params.require(:crowd_story).permit(:content)
+      params.require(:crowd_story).permit(:story)
     end
 end
