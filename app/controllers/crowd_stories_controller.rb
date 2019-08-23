@@ -47,6 +47,6 @@ class CrowdStoriesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def crowd_story_params
-      params.require(:crowd_story).permit(:story)
+      params.require(:crowd_story).permit(:story, :title)
     end
 end

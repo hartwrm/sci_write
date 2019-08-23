@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # root to: "prompts#index"
+  resources :welcome
   resources :crowd_stories, only: [:index]
   resources :prompts, only: [:index, :show] do
     resources :crowd_stories, except: [:index]
