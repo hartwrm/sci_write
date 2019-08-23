@@ -2046,3 +2046,20 @@ Processing by PromptsController#index as HTML
 Completed 204 No Content in 53ms (ActiveRecord: 0.0ms | Allocations: 1276)
 
 
+Started GET "/prompts" for ::1 at 2019-08-22 22:39:01 -0400
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  Rendered prompts/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 388)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/hartwrm/Documents/Projects/scifi_app/sci_write/public/packs
+Completed 200 OK in 7806ms (Views: 7786.2ms | ActiveRecord: 0.0ms | Allocations: 1531407)
+
+
+Started GET "/prompts" for ::1 at 2019-08-22 22:39:12 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  Rendered prompts/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 4393)
+
+
