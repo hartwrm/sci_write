@@ -4969,3 +4969,51 @@ Migrating to AddTitleToImages (20190824040119)
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3614364771039202425)[0m
   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-08-24 00:05:38 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 224)
+Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.0ms | Allocations: 9972)
+
+
+Started GET "/sendimages" for ::1 at 2019-08-24 00:05:40 -0400
+Processing by SendimagesController#index as HTML
+  Rendering sendimages/index.html.erb within layouts/application
+  Rendered sendimages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 97)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 5993)
+
+
+Started GET "/sendimages/1" for ::1 at 2019-08-24 00:08:26 -0400
+Processing by SendimagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering sendimages/show.html.erb within layouts/application
+  Rendered sendimages/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 97)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 5547)
+
+
+Started GET "/sendimages/1" for ::1 at 2019-08-24 00:09:28 -0400
+Processing by SendimagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering sendimages/show.html.erb within layouts/application
+  Rendered sendimages/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 94)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 6330)
+
+
+Started GET "/sendimages" for ::1 at 2019-08-24 00:09:31 -0400
+Processing by SendimagesController#index as HTML
+  Rendering sendimages/index.html.erb within layouts/application
+  Rendered sendimages/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 9668)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 10252)
+
+
+  
+ActionView::Template::Error (undefined method `/' for "/sendimages":String):
+     6:   </head>
+     7:   <body>
+     8:     <h1>This is Where the Images Go</h1>
+     9:     <%= link_to "Show Page", sendimages_path/1%>
+    10:   </body>
+    11: </html>
+  
+app/views/sendimages/index.html.erb:9
