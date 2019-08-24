@@ -2976,3 +2976,1366 @@ SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controlle
 app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
 app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
 app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+Started PATCH "/prompts/2/crowd_stories/12" for ::1 at 2019-08-23 21:08:54 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+  def index
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+Started PATCH "/prompts/2/crowd_stories/12" for ::1 at 2019-08-23 21:09:08 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+  def show
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+Started PATCH "/prompts/2/crowd_stories/12" for ::1 at 2019-08-23 21:10:46 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+  def show
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/prompts/2" for ::1 at 2019-08-23 21:10:53 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.2ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:20
+  [1m[36mCrowdStory Create (0.3ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:10:53.237598"], ["updated_at", "2019-08-24 01:10:53.237598"], ["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:20
+  Rendered prompts/show.html.erb within layouts/application (Duration: 55.2ms | Allocations: 14602)
+Completed 200 OK in 109ms (Views: 77.8ms | ActiveRecord: 9.4ms | Allocations: 23496)
+
+
+Started PATCH "/prompts/2/crowd_stories/13" for ::1 at 2019-08-23 21:11:00 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+  def show
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/prompts/2" for ::1 at 2019-08-23 21:12:04 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPrompt Load (0.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:20
+  [1m[36mCrowdStory Create (0.4ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:12:04.671170"], ["updated_at", "2019-08-24 01:12:04.671170"], ["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:20
+  Rendered prompts/show.html.erb within layouts/application (Duration: 44.6ms | Allocations: 14619)
+Completed 200 OK in 109ms (Views: 82.2ms | ActiveRecord: 11.0ms | Allocations: 23507)
+
+
+Started PATCH "/prompts/2/crowd_stories/14" for ::1 at 2019-08-23 21:12:10 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+  def show
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+  [1m[36mCrowdStory Load (0.5ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/prompts/2" for ::1 at 2019-08-23 21:16:13 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.2ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:20
+  [1m[36mCrowdStory Create (1.0ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:16:13.481660"], ["updated_at", "2019-08-24 01:16:13.481660"], ["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:20
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:20
+  Rendered prompts/show.html.erb within layouts/application (Duration: 42.8ms | Allocations: 15827)
+Completed 200 OK in 99ms (Views: 57.4ms | ActiveRecord: 13.5ms | Allocations: 25503)
+
+
+Started GET "/prompts/2" for ::1 at 2019-08-23 21:18:32 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPrompt Load (2.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.7ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (0.6ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:18:32.644474"], ["updated_at", "2019-08-24 01:18:32.644474"], ["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 35.4ms | Allocations: 9013)
+Completed 200 OK in 72ms (Views: 60.2ms | ActiveRecord: 5.2ms | Allocations: 14847)
+
+
+Started GET "/prompts/2" for ::1 at 2019-08-23 21:18:34 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (0.4ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:18:34.065263"], ["updated_at", "2019-08-24 01:18:34.065263"], ["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 26.2ms | Allocations: 8733)
+Completed 200 OK in 41ms (Views: 34.4ms | ActiveRecord: 2.8ms | Allocations: 13634)
+
+
+Started GET "/prompts/4" for ::1 at 2019-08-23 21:18:43 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (2.7ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:18:43.903679"], ["updated_at", "2019-08-24 01:18:43.903679"], ["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 45.3ms | Allocations: 8555)
+Completed 200 OK in 71ms (Views: 63.4ms | ActiveRecord: 4.3ms | Allocations: 13453)
+
+
+Started PATCH "/prompts/4/crowd_stories/18" for ::1 at 2019-08-23 21:18:52 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+  def show
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/prompts/4/crowd_stories" for ::1 at 2019-08-23 21:21:08 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+  def show
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/prompts/4" for ::1 at 2019-08-23 21:21:19 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (0.3ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:21:19.803153"], ["updated_at", "2019-08-24 01:21:19.803153"], ["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 56.8ms | Allocations: 14389)
+Completed 200 OK in 107ms (Views: 60.7ms | ActiveRecord: 19.0ms | Allocations: 23292)
+
+
+Started GET "/prompts/4" for ::1 at 2019-08-23 21:24:51 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.4ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (0.8ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:24:51.616328"], ["updated_at", "2019-08-24 01:24:51.616328"], ["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 235.1ms | Allocations: 79285)
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 2.6ms | Allocations: 81056)
+
+
+  
+ActionView::Template::Error (undefined method `crowd_story_path' for #<#<Class:0x00007fc61e606670>:0x00007fc61e604be0>):
+    18:     </div>
+    19:     <div>
+    20:       <h3>Add to the Story!</h3>
+    21:       <%= simple_form_for [@prompt.crowd_stories.create] do |f| %>
+    22:         <%= f.input :title %>
+    23:         <%= f.input :story %>
+    24:         <%= f.button :submit, "Add to Story" %>
+  
+app/views/prompts/show.html.erb:21
+Started GET "/prompts/4" for ::1 at 2019-08-23 21:25:06 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (2.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  Rendered prompts/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1173)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.9ms | Allocations: 2942)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2><%= @prompt.writing_prompt %></h2>
+
+    <% @prompt.crowd_stories.each do |crowd_story| %>
+
+    <div>
+    <p>
+      <%=crowd_story.title %>
+      <%=crowd_story.story %>
+    </p>
+    <% end %>
+    </div>
+    <div>
+      <h3>Add to the Story!</h3>
+      <%= simple_form_for [@prompt @prompt.crowd_stories.create] do |f| %>
+        <%= f.input :title %>
+        <%= f.input :story %>
+        <%= f.button :submit, "Add to Story" %>
+      <% end %>
+    </div>
+
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html lang="en" dir="ltr">
+3:      <head>
+4:        <meta charset="utf-8">
+5:        <title></title>
+6:      </head>
+7:      <body>
+8:        <h2><%= @prompt.writing_prompt %></h2>
+9:    
+10:        <% @prompt.crowd_stories.each do |crowd_story| %>
+11:    
+12:        <div>
+13:        <p>
+14:          <%=crowd_story.title %>
+15:          <%=crowd_story.story %>
+16:        </p>
+17:        <% end %>
+18:        </div>
+19:        <div>
+20:          <h3>Add to the Story!</h3>
+21:          <%= simple_form_for [@prompt @prompt.crowd_stories.create] do |f| %>
+22:            <%= f.input :title %>
+23:            <%= f.input :story %>
+24:            <%= f.button :submit, "Add to Story" %>
+25:          <% end %>
+26:        </div>
+27:    
+28:      </body>
+29:    </html>
+  
+app/views/prompts/show.html.erb:21: syntax error, unexpected tIVAR, expecting ']'
+app/views/prompts/show.html.erb:21: syntax error, unexpected ']', expecting keyword_end
+app/views/prompts/show.html.erb:32: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/prompts/show.html.erb:21: syntax error, unexpected tIVAR, expecting ']'
+app/views/prompts/show.html.erb:21: syntax error, unexpected ']', expecting keyword_end
+app/views/prompts/show.html.erb:32: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/prompts/show.html.erb:21: syntax error, unexpected tIVAR, expecting ']'
+app/views/prompts/show.html.erb:21: syntax error, unexpected ']', expecting keyword_end
+app/views/prompts/show.html.erb:32: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/prompts/show.html.erb:21: syntax error, unexpected tIVAR, expecting ']'
+app/views/prompts/show.html.erb:21: syntax error, unexpected ']', expecting keyword_end
+app/views/prompts/show.html.erb:32: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/prompts/show.html.erb:21: syntax error, unexpected tIVAR, expecting ']'
+app/views/prompts/show.html.erb:21: syntax error, unexpected ']', expecting keyword_end
+app/views/prompts/show.html.erb:32: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/prompts/show.html.erb:21: syntax error, unexpected tIVAR, expecting ']'
+app/views/prompts/show.html.erb:21: syntax error, unexpected ']', expecting keyword_end
+app/views/prompts/show.html.erb:32: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/prompts/4" for ::1 at 2019-08-23 21:25:16 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  Rendered prompts/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1173)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.5ms | Allocations: 2942)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2><%= @prompt.writing_prompt %></h2>
+
+    <% @prompt.crowd_stories.each do |crowd_story| %>
+
+    <div>
+    <p>
+      <%=crowd_story.title %>
+      <%=crowd_story.story %>
+    </p>
+    <% end %>
+    </div>
+    <div>
+      <h3>Add to the Story!</h3>
+      <%= simple_form_for [@prompts @prompt.crowd_stories.create] do |f| %>
+        <%= f.input :title %>
+        <%= f.input :story %>
+        <%= f.button :submit, "Add to Story" %>
+      <% end %>
+    </div>
+
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html lang="en" dir="ltr">
+3:      <head>
+4:        <meta charset="utf-8">
+5:        <title></title>
+6:      </head>
+7:      <body>
+8:        <h2><%= @prompt.writing_prompt %></h2>
+9:    
+10:        <% @prompt.crowd_stories.each do |crowd_story| %>
+11:    
+12:        <div>
+13:        <p>
+14:          <%=crowd_story.title %>
+15:          <%=crowd_story.story %>
+16:        </p>
+17:        <% end %>
+18:        </div>
+19:        <div>
+20:          <h3>Add to the Story!</h3>
+21:          <%= simple_form_for [@prompts @prompt.crowd_stories.create] do |f| %>
+22:            <%= f.input :title %>
+23:            <%= f.input :story %>
+24:            <%= f.button :submit, "Add to Story" %>
+25:          <% end %>
+26:        </div>
+27:    
+28:      </body>
+29:    </html>
+  
+app/views/prompts/show.html.erb:21: syntax error, unexpected tIVAR, expecting ']'
+app/views/prompts/show.html.erb:21: syntax error, unexpected ']', expecting keyword_end
+app/views/prompts/show.html.erb:32: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/prompts/show.html.erb:21: syntax error, unexpected tIVAR, expecting ']'
+app/views/prompts/show.html.erb:21: syntax error, unexpected ']', expecting keyword_end
+app/views/prompts/show.html.erb:32: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/prompts/show.html.erb:21: syntax error, unexpected tIVAR, expecting ']'
+app/views/prompts/show.html.erb:21: syntax error, unexpected ']', expecting keyword_end
+app/views/prompts/show.html.erb:32: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/prompts/show.html.erb:21: syntax error, unexpected tIVAR, expecting ']'
+app/views/prompts/show.html.erb:21: syntax error, unexpected ']', expecting keyword_end
+app/views/prompts/show.html.erb:32: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/prompts/show.html.erb:21: syntax error, unexpected tIVAR, expecting ']'
+app/views/prompts/show.html.erb:21: syntax error, unexpected ']', expecting keyword_end
+app/views/prompts/show.html.erb:32: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/prompts/show.html.erb:21: syntax error, unexpected tIVAR, expecting ']'
+app/views/prompts/show.html.erb:21: syntax error, unexpected ']', expecting keyword_end
+app/views/prompts/show.html.erb:32: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/prompts/4" for ::1 at 2019-08-23 21:25:31 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (1.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.6ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (1.2ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:25:31.285301"], ["updated_at", "2019-08-24 01:25:31.285301"], ["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 75.0ms | Allocations: 8920)
+Completed 200 OK in 117ms (Views: 102.4ms | ActiveRecord: 4.8ms | Allocations: 14759)
+
+
+Started GET "/prompts/4" for ::1 at 2019-08-23 21:26:17 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.2ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (0.5ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:26:17.517096"], ["updated_at", "2019-08-24 01:26:17.517096"], ["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 59.2ms | Allocations: 14438)
+Completed 200 OK in 87ms (Views: 64.5ms | ActiveRecord: 10.6ms | Allocations: 23325)
+
+
+Started GET "/prompts/4" for ::1 at 2019-08-23 21:26:18 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.4ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (0.6ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:26:18.985817"], ["updated_at", "2019-08-24 01:26:18.985817"], ["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 28.1ms | Allocations: 8649)
+Completed 200 OK in 39ms (Views: 33.0ms | ActiveRecord: 3.4ms | Allocations: 13549)
+
+
+Started PATCH "/prompts/4/crowd_stories/23" for ::1 at 2019-08-23 21:26:25 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+  def show
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:10: syntax error, unexpected keyword_def, expecting ']'
+Started PATCH "/prompts/4/crowd_stories/23" for ::1 at 2019-08-23 21:26:46 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+  def create
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+Started PATCH "/prompts/4/crowd_stories/23" for ::1 at 2019-08-23 21:26:51 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+  def create
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/prompts/4" for ::1 at 2019-08-23 21:27:12 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.2ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (0.4ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:27:12.612891"], ["updated_at", "2019-08-24 01:27:12.612891"], ["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 30.0ms | Allocations: 14481)
+Completed 200 OK in 49ms (Views: 32.8ms | ActiveRecord: 7.9ms | Allocations: 23383)
+
+
+Started PATCH "/prompts/4/crowd_stories/24" for ::1 at 2019-08-23 21:27:17 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+  def create
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/prompts/4" for ::1 at 2019-08-23 21:28:03 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.2ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (0.4ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:28:03.578828"], ["updated_at", "2019-08-24 01:28:03.578828"], ["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 49.4ms | Allocations: 14496)
+Completed 200 OK in 76ms (Views: 59.4ms | ActiveRecord: 6.7ms | Allocations: 23382)
+
+
+Started GET "/prompts/4" for ::1 at 2019-08-23 21:28:04 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.2ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (0.4ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:28:04.619898"], ["updated_at", "2019-08-24 01:28:04.619898"], ["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 59.7ms | Allocations: 8700)
+Completed 200 OK in 73ms (Views: 69.8ms | ActiveRecord: 1.4ms | Allocations: 13601)
+
+
+Started PATCH "/prompts/4/crowd_stories/26" for ::1 at 2019-08-23 21:28:15 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+  def create
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:15: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/prompts/4" for ::1 at 2019-08-23 21:28:27 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.2ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (0.3ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:28:27.924792"], ["updated_at", "2019-08-24 01:28:27.924792"], ["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 30.5ms | Allocations: 14532)
+Completed 200 OK in 53ms (Views: 36.2ms | ActiveRecord: 8.5ms | Allocations: 23415)
+
+
+Started GET "/crowd_stories/1" for ::1 at 2019-08-23 21:28:36 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/crowd_stories/1"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/crowd_stories/1" for ::1 at 2019-08-23 21:29:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/crowd_stories/1"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/prompts/crowd_stories/1" for ::1 at 2019-08-23 21:29:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/prompts/crowd_stories/1"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/prompts/3" for ::1 at 2019-08-23 21:29:34 -0400
+Processing by PromptsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.5ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (0.5ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:29:34.312454"], ["updated_at", "2019-08-24 01:29:34.312454"], ["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 78.5ms | Allocations: 14404)
+Completed 200 OK in 120ms (Views: 83.0ms | ActiveRecord: 19.3ms | Allocations: 23386)
+
+
+Started GET "/crowd_stories/3" for ::1 at 2019-08-23 21:29:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/crowd_stories/3"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/prompts/4/crowd_stories?crowd_story[story]=Testing%20testing%20testing&crowd_story[title]=Test%20test" for ::1 at 2019-08-23 21:31:02 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+  def index
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/prompts/3" for ::1 at 2019-08-23 21:32:30 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (0.3ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:32:30.040431"], ["updated_at", "2019-08-24 01:32:30.040431"], ["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 23.9ms | Allocations: 8602)
+Completed 200 OK in 42ms (Views: 37.1ms | ActiveRecord: 2.0ms | Allocations: 13499)
+
+
+Started GET "/prompts/2" for ::1 at 2019-08-23 21:32:32 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPrompt Load (1.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.5ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (2.2ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:32:32.780231"], ["updated_at", "2019-08-24 01:32:32.780231"], ["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 29.7ms | Allocations: 8743)
+Completed 200 OK in 46ms (Views: 34.7ms | ActiveRecord: 5.4ms | Allocations: 13644)
+
+
+Started GET "/prompts/1" for ::1 at 2019-08-23 21:32:36 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (4.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (1.2ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (0.6ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 01:32:36.282782"], ["updated_at", "2019-08-24 01:32:36.282782"], ["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 27.1ms | Allocations: 8614)
+Completed 200 OK in 54ms (Views: 40.9ms | ActiveRecord: 6.9ms | Allocations: 13528)
+
+
+Started GET "/" for ::1 at 2019-08-23 21:32:52 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 177)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 5148)
+
+
+Started GET "/prompts" for ::1 at 2019-08-23 21:32:53 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 825)
+Completed 200 OK in 24ms (Views: 18.5ms | ActiveRecord: 0.5ms | Allocations: 5411)
+
+
+Started GET "/prompts/:id" for ::1 at 2019-08-23 21:32:55 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mPrompt Load (2.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+Completed 404 Not Found in 9ms (ActiveRecord: 2.8ms | Allocations: 1119)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Prompt with 'id'=:id):
+  
+app/controllers/prompts_controller.rb:21:in `set_prompt'
+Started GET "/prompts/:id" for ::1 at 2019-08-23 21:33:59 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+Completed 404 Not Found in 6ms (ActiveRecord: 0.7ms | Allocations: 1118)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Prompt with 'id'=:id):
+  
+app/controllers/prompts_controller.rb:21:in `set_prompt'
+Started GET "/" for ::1 at 2019-08-23 21:34:06 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 176)
+Completed 200 OK in 44ms (Views: 39.7ms | ActiveRecord: 0.0ms | Allocations: 5545)
+
+
+Started GET "/prompts" for ::1 at 2019-08-23 21:34:07 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 823)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 1.0ms | Allocations: 5848)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:34:08 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 658)
+Completed 200 OK in 31ms (Views: 25.5ms | ActiveRecord: 1.5ms | Allocations: 5106)
+
+
+Started GET "/prompts/prompts/" for ::1 at 2019-08-23 21:34:10 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"prompts"}
+  [1m[36mPrompt Load (1.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+Completed 404 Not Found in 8ms (ActiveRecord: 1.2ms | Allocations: 1121)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Prompt with 'id'=prompts):
+  
+app/controllers/prompts_controller.rb:21:in `set_prompt'
+Started GET "/prompts/" for ::1 at 2019-08-23 21:34:12 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 657)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.5ms | Allocations: 5108)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:34:30 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 824)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.6ms | Allocations: 6208)
+
+
+Started GET "/prompts/prompts/[:id]" for ::1 at 2019-08-23 21:34:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/prompts/prompts/[:id]"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-08-23 21:39:21 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 176)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 5547)
+
+
+Started GET "/prompts" for ::1 at 2019-08-23 21:39:23 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 823)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.6ms | Allocations: 5838)
+
+
+Started GET "/%60prompts/:id%60" for ::1 at 2019-08-23 21:39:24 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/%60prompts/:id%60"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/%60prompts/:id%60" for ::1 at 2019-08-23 21:39:36 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/%60prompts/:id%60"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/prompts" for ::1 at 2019-08-23 21:39:38 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 822)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.7ms | Allocations: 6209)
+
+
+Started GET "/%60:id%60" for ::1 at 2019-08-23 21:39:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/%60:id%60"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/prompts" for ::1 at 2019-08-23 21:39:42 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 657)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.6ms | Allocations: 5110)
+
+
+Started GET "/prompts" for ::1 at 2019-08-23 21:49:23 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 3462)
+Completed 200 OK in 31ms (Views: 24.1ms | ActiveRecord: 1.3ms | Allocations: 9829)
+
+
+Started GET "/prompts" for ::1 at 2019-08-23 21:55:41 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 902)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.6ms | Allocations: 6280)
+
+
+Started GET "/prompts" for ::1 at 2019-08-23 21:55:42 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 658)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.3ms | Allocations: 5107)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:55:45 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (2.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 658)
+Completed 200 OK in 29ms (Views: 25.3ms | ActiveRecord: 2.7ms | Allocations: 5111)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:55:50 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 658)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 1.0ms | Allocations: 5110)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:55:53 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 658)
+Completed 200 OK in 37ms (Views: 33.6ms | ActiveRecord: 0.5ms | Allocations: 5107)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:55:53 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 658)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 1.0ms | Allocations: 5105)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:59:31 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 3596)
+Completed 200 OK in 29ms (Views: 17.8ms | ActiveRecord: 7.7ms | Allocations: 9965)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:59:36 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 658)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.5ms | Allocations: 5110)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:59:39 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 658)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 1.3ms | Allocations: 5106)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:59:40 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 659)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 1.0ms | Allocations: 5111)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:59:41 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 658)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.9ms | Allocations: 5107)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:59:41 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 658)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 1.3ms | Allocations: 5108)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:59:41 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 658)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 1.9ms | Allocations: 5109)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:59:41 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 658)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.5ms | Allocations: 5111)
+
+
+Started GET "/prompts/" for ::1 at 2019-08-23 21:59:41 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 658)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 1.1ms | Allocations: 5108)
+
+
+Started GET "/prompts/4" for ::1 at 2019-08-23 22:02:58 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.5ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (1.0ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 02:02:58.687384"], ["updated_at", "2019-08-24 02:02:58.687384"], ["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 61.9ms | Allocations: 21890)
+Completed 200 OK in 115ms (Views: 76.8ms | ActiveRecord: 7.8ms | Allocations: 27073)
+
+
+Started PATCH "/prompts/4/crowd_stories/32" for ::1 at 2019-08-23 22:03:03 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+  def index
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/prompts/4" for ::1 at 2019-08-23 22:05:57 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.4ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 16.9ms | Allocations: 6560)
+Completed 200 OK in 36ms (Views: 31.9ms | ActiveRecord: 0.9ms | Allocations: 12395)
+
+
+Started POST "/prompts/4/crowd_stories" for ::1 at 2019-08-23 22:06:03 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+  def index
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/prompts/4/" for ::1 at 2019-08-23 22:06:30 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.5ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 35.4ms | Allocations: 6259)
+Completed 200 OK in 57ms (Views: 52.9ms | ActiveRecord: 0.9ms | Allocations: 11158)
+
+
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "crowd_stories"[0m
+Started GET "/prompts/4/" for ::1 at 2019-08-23 22:10:24 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 37.7ms | Allocations: 12315)
+Completed 200 OK in 72ms (Views: 52.8ms | ActiveRecord: 8.1ms | Allocations: 21986)
+
+
+Started POST "/prompts/4/crowd_stories" for ::1 at 2019-08-23 22:10:29 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+  def index
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/prompts/4" for ::1 at 2019-08-23 22:10:55 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 31.7ms | Allocations: 12010)
+Completed 200 OK in 73ms (Views: 53.9ms | ActiveRecord: 9.0ms | Allocations: 20866)
+
+
+Started POST "/prompts/4/crowd_stories" for ::1 at 2019-08-23 22:11:01 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+  def index
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+Started POST "/prompts/4/crowd_stories" for ::1 at 2019-08-23 22:11:20 -0400
+  
+SyntaxError (/Users/hartwrm/Documents/Projects/scifi_app/sci_write/app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+  def index
+  ^~~):
+  
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+app/controllers/crowd_stories_controller.rb:5: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/prompts/4" for ::1 at 2019-08-23 22:13:49 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (2.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (2.7ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (3.3ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 02:13:49.501917"], ["updated_at", "2019-08-24 02:13:49.501917"], ["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 41.8ms | Allocations: 9139)
+Completed 200 OK in 63ms (Views: 47.7ms | ActiveRecord: 11.3ms | Allocations: 14972)
+
+
+Started GET "/prompts" for ::1 at 2019-08-23 22:13:52 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 947)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.4ms | Allocations: 5535)
+
+
+Started GET "/prompts" for ::1 at 2019-08-23 22:13:54 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 777)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.4ms | Allocations: 5228)
+
+
+Started GET "/prompts/3" for ::1 at 2019-08-23 22:13:59 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (3.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[36mCrowdStory Create (2.1ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("created_at", "updated_at", "prompt_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2019-08-24 02:13:59.483006"], ["updated_at", "2019-08-24 02:13:59.483006"], ["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:21
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/views/prompts/show.html.erb:21
+  Rendered prompts/show.html.erb within layouts/application (Duration: 28.6ms | Allocations: 8616)
+Completed 200 OK in 57ms (Views: 32.0ms | ActiveRecord: 7.0ms | Allocations: 13511)
+
+

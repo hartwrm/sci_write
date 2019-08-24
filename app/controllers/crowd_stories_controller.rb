@@ -3,9 +3,7 @@ class CrowdStoriesController < ApplicationController
 
   # GET /crowd_stories
   def index
-    @crowd_stories = CrowdStory.all
-
-    render json: @crowd_stories
+    @crowd_stories
   end
 
   # GET /crowd_stories/1
@@ -15,16 +13,19 @@ class CrowdStoriesController < ApplicationController
 
   # POST /crowd_stories
   def create
-    @prompt = Prompt.find(params[:id])
-    @crowd_story = @prompt.crowd_stories.create(crowd_story_params)
-    # @crowd_story = CrowdStory.new(crowd_story_params)
-    # @crowd_story.prompt_id = params[:prompt_id]
+    # @prompt = Prompt.find(params[:id])
+    # @crowd_story = @prompt.crowd_stories.create(crowd_story_params)
+    @crowd_story = CrowdStory.new(crowd_story_params)
+    @crowd_story.prompt_id = params[:prompt_id]
+    @crowd_story.save
+    redirect_to root_path
 
-    # if @crowd_story.save
-    #   render json: @crowd_story, status: :created
-    # else
-    #   render json: @crowd_story.errors, status: :unprocessable_entity
-    # end
+
+    if @crowd_story.save
+      render template: "prompts/#{params[:prompt_id]}"
+    else
+      render json: @crowd_story.errors, status: :unprocessable_entity
+    end
   end
 
   # PATCH/PUT /crowd_stories/1

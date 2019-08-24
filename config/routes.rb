@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: "welcome#index"
-  resources :welcome
+  resources :welcome, only: [:index]
   resources :prompts, only: [:index, :show] do
     resources :crowd_stories
   end
