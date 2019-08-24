@@ -1,0 +1,2 @@
+class SendimagesController < ApplicationController
+end
