@@ -10,20 +10,29 @@
     <% @prompt.crowd_stories.each do |crowd_story| %>
 
     <div>
-    <p>
+    <strong><h3>
       <%=crowd_story.title %>
+    </h3></strong>
+      <p>
       <%=crowd_story.story %>
     </p>
     <% end %>
     </div>
-    <div>
-      <h3>Add to the Story!</h3>
-      <%= simple_form_for [@prompt, @prompt.crowd_stories.create] do |f| %>
-        <%= f.input :title %>
-        <%= f.input :story %>
-        <%= f.button :submit, "Add to Story" %>
+  <div>
+    <h3>Add to the Story!</h3>
+    <%= form_with(model: [@prompt, @prompt.crowd_stories.build], local: true) do |form| %>
+    <p>
+      <%=form.label :title %><br>
+      <%=form.text_field :title %>
+    </p>
+    <p>
+      <%=form.label :story %><br>
+      <%=form.text_area :story %>
+    </p>
+    <p>
+      <%=form.submit %>
+    </p>
       <% end %>
-    </div>
-
+      </div>
   </body>
 </html>

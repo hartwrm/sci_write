@@ -1,10 +1,8 @@
 class CrowdStoriesController < ApplicationController
-  before_action :set_crowd_story, only: [:show, :update, :des
+  # before_action :set_crowd_story, only: [:show, :update, :des
 
   # GET /crowd_stories
-  def index
-    @crowd_stories
-  end
+
 
   # GET /crowd_stories/1
   def show
@@ -13,19 +11,9 @@ class CrowdStoriesController < ApplicationController
 
   # POST /crowd_stories
   def create
-    # @prompt = Prompt.find(params[:id])
-    # @crowd_story = @prompt.crowd_stories.create(crowd_story_params)
-    @crowd_story = CrowdStory.new(crowd_story_params)
-    @crowd_story.prompt_id = params[:prompt_id]
-    @crowd_story.save
-    redirect_to root_path
-
-
-    if @crowd_story.save
-      render template: "prompts/#{params[:prompt_id]}"
-    else
-      render json: @crowd_story.errors, status: :unprocessable_entity
-    end
+  @prompt = Prompt.find(params[:prompt_id])
+  @crowd_story = @prompt.crowd_stories.create(crowd_story_params)
+  redirect_to prompt_path(@prompt)
   end
 
   # PATCH/PUT /crowd_stories/1
