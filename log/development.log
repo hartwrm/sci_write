@@ -6565,3 +6565,121 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-08-24 08:45:28 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 529)
+Completed 200 OK in 1449ms (Views: 1435.1ms | ActiveRecord: 0.0ms | Allocations: 1524942)
+
+
+Started GET "/prompts" for ::1 at 2019-08-24 08:46:20 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (2.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 17.6ms | Allocations: 4005)
+Completed 200 OK in 37ms (Views: 19.7ms | ActiveRecord: 11.3ms | Allocations: 12307)
+
+
+Started GET "/prompts/3" for ::1 at 2019-08-24 08:46:22 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (2.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.8ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 107.8ms | Allocations: 32251)
+Completed 200 OK in 132ms (Views: 112.5ms | ActiveRecord: 7.1ms | Allocations: 39850)
+
+
+Started GET "/images" for ::1 at 2019-08-24 08:46:28 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (4.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 1245)
+Completed 200 OK in 47ms (Views: 16.6ms | ActiveRecord: 6.4ms | Allocations: 11975)
+
+
+Started GET "/images/new" for ::1 at 2019-08-24 08:46:29 -0400
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 158ms (ActiveRecord: 0.0ms | Allocations: 50536)
+
+
+  
+NoMethodError (undefined method `set_s3_direct_post' for #<ImagesController:0x00007ff0a3548be8>
+Did you mean?  set_response!):
+  
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:182:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:183:in `block in halting_and_conditional'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
