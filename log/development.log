@@ -4883,3 +4883,42 @@ Processing by PromptsController#show as HTML
 Completed 200 OK in 28ms (Views: 18.7ms | ActiveRecord: 0.8ms | Allocations: 6827)
 
 
+Started GET "/prompts/3" for ::1 at 2019-08-23 22:53:58 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (1.8ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 13.3ms | Allocations: 2007)
+Completed 200 OK in 51ms (Views: 43.6ms | ActiveRecord: 2.8ms | Allocations: 7931)
+
+
+Started POST "/prompts/3/crowd_stories" for ::1 at 2019-08-23 22:54:07 -0400
+Processing by CrowdStoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"VhI5y9QnD/0qFBgpjkV8R6ANIek+BimthSXv2mNntt5O+NB2+N28h149hD3w0fduH8W+5fD/NLuPLYTsF9EQFA==", "crowd_story"=>{"title"=>"OOooo yes", "story"=>"working working"}, "commit"=>"Create Crowd story", "prompt_id"=>"3"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/crowd_stories_controller.rb:14:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/crowd_stories_controller.rb:15:in `create'
+  [1m[36mCrowdStory Create (0.7ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("story", "created_at", "updated_at", "prompt_id", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["story", "working working"], ["created_at", "2019-08-24 02:54:07.998488"], ["updated_at", "2019-08-24 02:54:07.998488"], ["prompt_id", 3], ["title", "OOooo yes"]]
+  ↳ app/controllers/crowd_stories_controller.rb:15:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/crowd_stories_controller.rb:15:in `create'
+Redirected to http://localhost:3000/prompts/3
+Completed 302 Found in 15ms (ActiveRecord: 1.9ms | Allocations: 3560)
+
+
+Started GET "/prompts/3" for ::1 at 2019-08-23 22:54:08 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (5.1ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 11.3ms | Allocations: 1697)
+Completed 200 OK in 31ms (Views: 20.6ms | ActiveRecord: 5.7ms | Allocations: 6684)
+
+
