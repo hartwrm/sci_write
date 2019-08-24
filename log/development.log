@@ -5851,3 +5851,401 @@ Migrating to GetRidOfImageTable (20190824052021)
   [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3614364771039202425)[0m
   [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3614364771039202425)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateImages (20190824052717)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "images" ("id" bigserial primary key, "title" character varying, "imagedata" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190824052717"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(3614364771039202425)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-08-24 01:35:15 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 217)
+Completed 200 OK in 78ms (Views: 76.5ms | ActiveRecord: 0.0ms | Allocations: 22067)
+
+
+Started GET "/images" for ::1 at 2019-08-24 01:35:19 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.8ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 1414)
+Completed 200 OK in 43ms (Views: 20.5ms | ActiveRecord: 9.4ms | Allocations: 10177)
+
+
+Started GET "/images/new" for ::1 at 2019-08-24 01:35:23 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 21.8ms | Allocations: 6639)
+  Rendered images/new.html.erb within layouts/application (Duration: 23.7ms | Allocations: 7000)
+Completed 200 OK in 54ms (Views: 33.1ms | ActiveRecord: 5.1ms | Allocations: 16392)
+
+
+Started GET "/images/new" for ::1 at 2019-08-24 01:35:33 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 22.3ms | Allocations: 5654)
+  Rendered images/new.html.erb within layouts/application (Duration: 23.1ms | Allocations: 5751)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms | Allocations: 11893)
+
+
+Started POST "/images" for ::1 at 2019-08-24 01:35:53 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"0Q1jZmx1hMzPhiw5h3mZMYyNYOeoC4Sn5X3AhaSnrnQA4cqlg6lkUCC28kSeXZEtDXdJ19Z2qq2rHEdqxsG8Qw==", "image"=>{"title"=>"Airship", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007f93c9431e08 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190824-5540-y2e4ib.jpg>, @original_filename="airship.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"airship.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1224)
+
+
+  
+ArgumentError ( is not a recognized provider):
+  
+app/controllers/images_controller.rb:27:in `create'
+Started POST "/images" for ::1 at 2019-08-24 01:40:00 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"gdE+sDljkq/Kj57m8JdB6fXFao6LA0gBCpgZSii6c9iZO9cNFZkh1b6mAvKOA8rASg31gkX6VRcAkHJ8XAzVEg==", "image"=>{"title"=>"Airship", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007f93c8fd2678 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190824-5540-d0dx5b.jpg>, @original_filename="airship.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"airship.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1162)
+
+
+  
+ArgumentError ( is not a recognized provider):
+  
+app/controllers/images_controller.rb:27:in `create'
+Started GET "/images" for ::1 at 2019-08-24 01:42:02 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 929)
+Completed 200 OK in 83ms (Views: 76.9ms | ActiveRecord: 2.7ms | Allocations: 8094)
+
+
+Started GET "/" for ::1 at 2019-08-24 01:46:33 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 529)
+Completed 200 OK in 1530ms (Views: 1512.0ms | ActiveRecord: 0.0ms | Allocations: 1526858)
+
+
+Started GET "/prompts" for ::1 at 2019-08-24 01:46:37 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 4005)
+Completed 200 OK in 44ms (Views: 26.8ms | ActiveRecord: 6.2ms | Allocations: 12388)
+
+
+Started GET "/prompts/4" for ::1 at 2019-08-24 01:46:39 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.5ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 114.8ms | Allocations: 32392)
+Completed 200 OK in 132ms (Views: 118.6ms | ActiveRecord: 5.5ms | Allocations: 39989)
+
+
+Started GET "/prompts/2" for ::1 at 2019-08-24 01:46:46 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPrompt Load (1.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.7ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 22.2ms | Allocations: 6480)
+Completed 200 OK in 51ms (Views: 46.0ms | ActiveRecord: 2.2ms | Allocations: 13171)
+
+
+Started GET "/prompts/1" for ::1 at 2019-08-24 01:46:52 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.4ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 19.0ms | Allocations: 6356)
+Completed 200 OK in 40ms (Views: 35.6ms | ActiveRecord: 1.0ms | Allocations: 13042)
+
+
+Started POST "/prompts/1/crowd_stories" for ::1 at 2019-08-24 01:47:59 -0400
+Processing by CrowdStoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"uGJRuwM80b+jXjtnaRc8CNxCjXtumgoCBBGmxp/dvRpDbL0lmiGzUuSLmgRqtJiicD0CArC/7wZ6SJJMF5n2kQ==", "crowd_story"=>{"title"=>"Will the title print?", "story"=>"Let's see if we can add ot the story"}, "commit"=>"Create Crowd story", "prompt_id"=>"1"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/crowd_stories_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/crowd_stories_controller.rb:15:in `create'
+  [1m[36mCrowdStory Create (1.0ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("story", "created_at", "updated_at", "prompt_id", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["story", "Let's see if we can add ot the story"], ["created_at", "2019-08-24 05:48:00.019974"], ["updated_at", "2019-08-24 05:48:00.019974"], ["prompt_id", 1], ["title", "Will the title print?"]]
+  ↳ app/controllers/crowd_stories_controller.rb:15:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/crowd_stories_controller.rb:15:in `create'
+Redirected to http://localhost:3000/prompts/1
+Completed 302 Found in 9ms (ActiveRecord: 2.3ms | Allocations: 3814)
+
+
+Started GET "/prompts/1" for ::1 at 2019-08-24 01:48:00 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 12.0ms | Allocations: 6379)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.8ms | Allocations: 13050)
+
+
+Started GET "/prompts" for ::1 at 2019-08-24 01:48:11 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 779)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.5ms | Allocations: 7002)
+
+
+Started GET "/" for ::1 at 2019-08-24 01:48:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 75)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 6284)
+
+
+Started GET "/images" for ::1 at 2019-08-24 01:48:16 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1255)
+Completed 200 OK in 34ms (Views: 14.7ms | ActiveRecord: 2.2ms | Allocations: 11947)
+
+
+Started GET "/images/new" for ::1 at 2019-08-24 01:50:08 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 18.9ms | Allocations: 6543)
+  Rendered images/new.html.erb within layouts/application (Duration: 20.6ms | Allocations: 6909)
+Completed 200 OK in 55ms (Views: 36.6ms | ActiveRecord: 5.4ms | Allocations: 18581)
+
+
+Started POST "/images" for ::1 at 2019-08-24 01:50:26 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"NvY3QeP4xCc7vkL3P6gcnv4KsezWaQp2K8pmFmF6Qd/nGp6CDCQku9SOnIomjBSCf/CY3KgUJHxlq+H5AxxT6A==", "image"=>{"title"=>"pyramid", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007f86a1d19fa0 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190824-12254-hb2hgg.jpeg>, @original_filename="pyramid.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"pyramid.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Started GET "/prompts/1" for ::1 at 2019-08-24 01:51:44 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.6ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 117.8ms | Allocations: 12230)
+Completed 200 OK in 191ms (Views: 129.0ms | ActiveRecord: 26.5ms | Allocations: 22825)
+
+
+Started GET "/images" for ::1 at 2019-08-24 01:56:05 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 24.5ms | Allocations: 11186)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 12451)
+
+
+Started GET "/" for ::1 at 2019-08-24 01:56:15 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 217)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 7150)
+
+
+Started GET "/images" for ::1 at 2019-08-24 01:56:17 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1140)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1619)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1>Images</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Imagedata</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @images.each do |image| %>
+      <tr>
+        <td><%= image.title %></td>
+        <%= image_tag @image image.imagedata.thumb %>
+        <td><%= link_to 'Show', image %></td>
+        <td><%= link_to 'Edit', edit_image_path(image) %></td>
+        <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Image', new_image_path %>
+
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1>Images</h1>
+4:    
+5:    <table>
+6:      <thead>
+7:        <tr>
+8:          <th>Title</th>
+9:          <th>Imagedata</th>
+10:          <th colspan="3"></th>
+11:        </tr>
+12:      </thead>
+13:    
+14:      <tbody>
+15:        <% @images.each do |image| %>
+16:          <tr>
+17:            <td><%= image.title %></td>
+18:            <%= image_tag @image image.imagedata.thumb %>
+19:            <td><%= link_to 'Show', image %></td>
+20:            <td><%= link_to 'Edit', edit_image_path(image) %></td>
+21:            <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+22:          </tr>
+23:        <% end %>
+24:      </tbody>
+25:    </table>
+26:    
+27:    <br>
+28:    
+29:    <%= link_to 'New Image', new_image_path %>
+  
+app/views/images/index.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/images/index.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/images/index.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/images/index.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/images/index.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/images/index.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/images" for ::1 at 2019-08-24 01:58:12 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1328)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2582)
+
+
+  
+ActionView::Template::Error (undefined method `imagedata' for nil:NilClass):
+     6:     <title></title>
+     7:   </head>
+     8:   <body>
+     9:     <%= image_tag @image.imagedata.thumb %>
+    10:   </body>
+    11: </html>
+    12: 
+  
+app/views/images/index.html.erb:9
+Started GET "/images/new" for ::1 at 2019-08-24 01:58:24 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 37.8ms | Allocations: 5889)
+  Rendered images/new.html.erb within layouts/application (Duration: 41.4ms | Allocations: 6246)
+Completed 200 OK in 89ms (Views: 84.9ms | ActiveRecord: 0.0ms | Allocations: 12744)
+
+
+Completed 500 Internal Server Error in 480215ms (ActiveRecord: 0.0ms | Allocations: 1415171)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): https://sciwrite.s3-US East(N. Virgina).amazonaws.com:443):
+  
+app/controllers/images_controller.rb:27:in `create'
+Started POST "/images" for ::1 at 2019-08-24 01:58:33 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"Ez5hfLH5ZpWgu6sZkCMQdaVRX/AIx4qFlTexZhPJF+8L1IjBnQPV79SSNw3ut5tcGpnA/MY+l5OfP9pQZ3+xJQ==", "image"=>{"title"=>"Airship", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007f86a6930240 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190824-12254-coxgeo.jpg>, @original_filename="airship.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"airship.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 240026ms (ActiveRecord: 0.0ms | Allocations: 6005)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): https://sciwrite.s3-US East(N. Virgina).amazonaws.com:443):
+  
+app/controllers/images_controller.rb:27:in `create'
+Started GET "/images/new" for ::1 at 2019-08-24 02:02:58 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 20.0ms | Allocations: 5648)
+  Rendered images/new.html.erb within layouts/application (Duration: 20.5ms | Allocations: 5745)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.0ms | Allocations: 11883)
+
+
+Started POST "/images" for ::1 at 2019-08-24 02:03:14 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"t5PV9Tq15kwNzdtdgfkXD8502+s3XGlHfhlsFAQoIxSveTxIFk9VNnnkR0n/bZwmcbxE5/mldFF0EQcicJ6F3g==", "image"=>{"title"=>"cyberpunk", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007f86a46e2d28 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190824-12254-dxracm.jpeg>, @original_filename="cyberpunk.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"cyberpunk.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Started GET "/images" for ::1 at 2019-08-24 02:06:07 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1013)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.8ms | Allocations: 8176)
+
+
+Completed 500 Internal Server Error in 240027ms (ActiveRecord: 0.0ms | Allocations: 26568)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): https://sciwrite.s3-US East(N. Virgina).amazonaws.com:443):
+  
+app/controllers/images_controller.rb:27:in `create'
+Started GET "/images/new" for ::1 at 2019-08-24 02:08:41 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 28.7ms | Allocations: 5863)
+  Rendered images/new.html.erb within layouts/application (Duration: 33.7ms | Allocations: 6221)
+Completed 200 OK in 60ms (Views: 57.8ms | ActiveRecord: 0.0ms | Allocations: 13305)
+
+
+Started POST "/images" for ::1 at 2019-08-24 02:08:47 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"q/sniAI/z7xQ2MtAhDHSPrlHZ9AU7KCLyU2+U69pbcx6F45L7eMvIL/oFT2dFdoiOL1O4GqRjoGHLDm8zQ9/+w==", "image"=>{"title"=>"Airship", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007f86a67b3228 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190824-12254-1bxhknh.jpg>, @original_filename="airship.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"airship.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Started GET "/images" for ::1 at 2019-08-24 02:11:00 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.8ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 912)
+Completed 200 OK in 46ms (Views: 42.5ms | ActiveRecord: 1.8ms | Allocations: 7276)
+
+
+Completed 500 Internal Server Error in 240034ms (ActiveRecord: 0.0ms | Allocations: 15563)
+
+
+  
+URI::InvalidURIError (bad URI(is not URI?): https://sciwrite.s3-US East(N. Virgina).amazonaws.com:443):
+  
+app/controllers/images_controller.rb:27:in `create'
+Started GET "/images/new" for ::1 at 2019-08-24 02:16:08 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 20.0ms | Allocations: 5644)
+  Rendered images/new.html.erb within layouts/application (Duration: 20.6ms | Allocations: 5741)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.0ms | Allocations: 11879)
+
+
+Started POST "/images" for ::1 at 2019-08-24 02:16:17 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"vbd/P7hgRFzX/NbgfLITDQMPhG3yS86cWpB2Ey/Qrd2lXZaClJr3JqPVSvQCJpgkvMcbYTyy04pQmB0lW2YLFw==", "image"=>{"title"=>"cyberpunk", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007f86a3a09430 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190824-12254-gmsuan.jpeg>, @original_filename="cyberpunk.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"cyberpunk.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Started GET "/images/new" for ::1 at 2019-08-24 02:17:55 -0400
