@@ -1,5 +1,5 @@
 class CrowdStoriesController < ApplicationController
-  before_action :set_crowd_story, only: [:show, :update, :destroy]
+  before_action :set_crowd_story, only: [:show, :update, :des
 
   # GET /crowd_stories
   def index
@@ -15,8 +15,10 @@ class CrowdStoriesController < ApplicationController
 
   # POST /crowd_stories
   def create
-    @crowd_story = CrowdStory.new(crowd_story_params)
-    @crowd_story.prompt_id = params[:prompt_id]
+    @prompt = Prompt.find(params[:id])
+    @crowd_story = @prompt.crowd_stories.create(crowd_story_params)
+    # @crowd_story = CrowdStory.new(crowd_story_params)
+    # @crowd_story.prompt_id = params[:prompt_id]
 
     if @crowd_story.save
       render json: @crowd_story, status: :created

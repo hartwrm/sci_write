@@ -10,7 +10,7 @@ class PromptsController < ApplicationController
 
   # GET /prompts/1
   def show
-    render json: @prompt.to_json(include: :crowd_stories)
+    @prompt
   end
 
 

@@ -9,7 +9,7 @@
 
     <div>
   <% @prompts.each do |prompt| %>
-  <h2><%= prompt.writing_prompt%></h2>
+  <h2><a href="prompts/:id"><%= prompt.writing_prompt%></a></h2>
   <% end %>
     </div>
 

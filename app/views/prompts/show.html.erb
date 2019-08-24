@@ -5,9 +5,14 @@
     <title></title>
   </head>
   <body>
-    <h1>Writing Prompts</h1>
+    <h2><%= @prompt.writing_prompt %></h2>
+    <% @prompt.crowd_stories.each do |crowd_story| %>
+
     <div>
-      
+    <p>
+      <%=crowd_story.story %>
+    </p>
+    <% end %>
     </div>
 
   </body>
