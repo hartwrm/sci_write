@@ -21,19 +21,11 @@
 
   <div>
     <h3>Add to the Story!</h3>
-    <%= form_with(model: [@prompt, @prompt.crowd_stories.build], local: true) do |form| %>
-    <p>
-      <%=form.label :title %><br>
-      <%=form.text_field :title %>
-    </p>
-    <p>
-      <%=form.label :story %><br>
-      <%=form.text_area :story %>
-    </p>
-    <p>
-      <%=form.submit %>
-    </p>
-      <% end %>
+  <%= simple_form_for [@prompt, @prompt.crowd_stories.build] do |f| %>
+  <%=f.input :title %>
+  <%=f.input :story %>
+  <%=f.button :submit %>
+  <%end%>
       </div>
   </body>
 </html>

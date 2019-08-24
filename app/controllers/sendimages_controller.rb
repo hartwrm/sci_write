@@ -21,7 +21,7 @@ end
 private
 
 def form_params
-  params.require(:imagepost).permit(:title, :image)
+  params.require(:image_post).permit(:title, :image)
 end
 
 end

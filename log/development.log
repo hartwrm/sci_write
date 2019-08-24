@@ -5017,3 +5017,106 @@ ActionView::Template::Error (undefined method `/' for "/sendimages":String):
     11: </html>
   
 app/views/sendimages/index.html.erb:9
+Started GET "/sendimages" for ::1 at 2019-08-24 00:23:27 -0400
+Processing by SendimagesController#index as HTML
+  Rendering sendimages/index.html.erb within layouts/application
+  Rendered sendimages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 96)
+Completed 200 OK in 40ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 10459)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mImagePost Create (3.4ms)[0m  [1m[32mINSERT INTO "image_posts" ("image", "created_at", "updated_at", "title") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["image", nil], ["created_at", "2019-08-24 04:35:32.067068"], ["updated_at", "2019-08-24 04:35:32.067068"], ["title", "testing"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mImagePost Load (0.7ms)[0m  [1m[34mSELECT "image_posts".* FROM "image_posts" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2019-08-24 00:40:10 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 217)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.0ms | Allocations: 6461)
+
+
+Started GET "/prompts" for ::1 at 2019-08-24 00:40:11 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 3639)
+Completed 200 OK in 20ms (Views: 15.2ms | ActiveRecord: 1.1ms | Allocations: 10380)
+
+
+Started GET "/prompts/1" for ::1 at 2019-08-24 00:40:13 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.5ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 437.7ms | Allocations: 168488)
+Completed 500 Internal Server Error in 446ms (ActiveRecord: 1.5ms | Allocations: 169808)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007f93ca141198>:0x00007f93c952ac60>):
+    22:   <div>
+    23:     <h3>Add to the Story!</h3>
+    24:   <%= simple_form_for [@prompt, @prompt.crowd_stories.build] do |form| %>
+    25:   <%=f.input :title %>
+    26:   <%=f.input :story %>
+    27:   <%=f.button :submit %>
+    28:   <%end%>
+  
+app/views/prompts/show.html.erb:25
+app/views/prompts/show.html.erb:24
+Started GET "/prompts/1" for ::1 at 2019-08-24 00:41:14 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.7ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 26.4ms | Allocations: 6829)
+Completed 200 OK in 53ms (Views: 47.9ms | ActiveRecord: 1.1ms | Allocations: 13578)
+
+
+Started POST "/prompts/1/crowd_stories" for ::1 at 2019-08-24 00:41:23 -0400
+Processing by CrowdStoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"O1NiTKYzaq4faFlZJH1Tcq/ZzS284pbs5W0i54j/NgAjuYvxisnZ1GtBxU1a6dhbEBFSIXIbi/rvZUnR/EmQyg==", "crowd_story"=>{"title"=>"one more test", "story"=>"please work"}, "commit"=>"Create Crowd story", "prompt_id"=>"1"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/crowd_stories_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/crowd_stories_controller.rb:15:in `create'
+  [1m[36mCrowdStory Create (1.5ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("story", "created_at", "updated_at", "prompt_id", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["story", "please work"], ["created_at", "2019-08-24 04:41:23.990692"], ["updated_at", "2019-08-24 04:41:23.990692"], ["prompt_id", 1], ["title", "one more test"]]
+  ↳ app/controllers/crowd_stories_controller.rb:15:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/crowd_stories_controller.rb:15:in `create'
+Redirected to http://localhost:3000/prompts/1
+Completed 302 Found in 12ms (ActiveRecord: 2.5ms | Allocations: 3798)
+
+
+Started GET "/prompts/1" for ::1 at 2019-08-24 00:41:24 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 16.2ms | Allocations: 6406)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.6ms | Allocations: 12216)
+
+
+Started GET "/prompts/1" for ::1 at 2019-08-24 00:41:29 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 15.5ms | Allocations: 6399)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 0.9ms | Allocations: 12204)
+
+
