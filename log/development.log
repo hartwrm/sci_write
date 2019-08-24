@@ -2063,3 +2063,173 @@ Processing by PromptsController#index as HTML
 Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 4393)
 
 
+Started GET "/prompts" for ::1 at 2019-08-23 19:29:32 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  Rendered prompts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 388)
+Completed 200 OK in 1563ms (Views: 1546.1ms | ActiveRecord: 0.0ms | Allocations: 1523978)
+
+
+Started GET "/welcome" for ::1 at 2019-08-23 19:30:22 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 106)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 5121)
+
+
+Started GET "/" for ::1 at 2019-08-23 19:30:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 4562)
+
+
+Started GET "/" for ::1 at 2019-08-23 19:30:39 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 4441)
+
+
+Started GET "/" for ::1 at 2019-08-23 19:40:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 420.1ms | Allocations: 154904)
+Completed 500 Internal Server Error in 425ms (ActiveRecord: 0.0ms | Allocations: 156129)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_prompt_path' for #<#<Class:0x00007fc62355b7c0>:0x00007fc623559290>):
+     8:     <h1>SciWrite</h1>
+     9:     <div class="container">
+    10:       <div>
+    11:         <%= link_to "Writing Prompts", index_prompt_path %>
+    12:       </div>
+    13:       <div>
+    14:         <%= link_to "Image Gallery", index_image_path %>
+  
+app/views/welcome/index.html.erb:11
+Started GET "/" for ::1 at 2019-08-23 19:40:43 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 515.8ms | Allocations: 147458)
+Completed 500 Internal Server Error in 523ms (ActiveRecord: 0.0ms | Allocations: 148694)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_prompts_path' for #<#<Class:0x00007fc624849198>:0x00007fc624843770>):
+     8:     <h1>SciWrite</h1>
+     9:     <div class="container">
+    10:       <div>
+    11:         <%= link_to "Writing Prompts", index_prompts_path %>
+    12:       </div>
+    13:       <div>
+    14:         <%= link_to "Image Gallery", index_image_path %>
+  
+app/views/welcome/index.html.erb:11
+Started GET "/" for ::1 at 2019-08-23 19:40:47 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 424.3ms | Allocations: 147306)
+Completed 500 Internal Server Error in 427ms (ActiveRecord: 0.0ms | Allocations: 147779)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_prompts_path' for #<#<Class:0x00007fc624849198>:0x00007fc61e646978>):
+     8:     <h1>SciWrite</h1>
+     9:     <div class="container">
+    10:       <div>
+    11:         <%= link_to "Writing Prompts", index_prompts_path %>
+    12:       </div>
+    13:       <div>
+    14:         <%= link_to "Image Gallery", index_image_path %>
+  
+app/views/welcome/index.html.erb:11
+Started GET "/" for ::1 at 2019-08-23 19:55:42 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 548.7ms | Allocations: 147566)
+Completed 500 Internal Server Error in 560ms (ActiveRecord: 0.0ms | Allocations: 148784)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_image_path' for #<#<Class:0x00007fc6237433f8>:0x00007fc623741b48>):
+    11:         <%= link_to "Writing Prompts", prompts_path %>
+    12:       </div>
+    13:       <div>
+    14:         <%= link_to "Image Gallery", index_image_path %>
+    15:       </div>
+    16: 
+    17:     </div>
+  
+app/views/welcome/index.html.erb:14
+Started GET "/" for ::1 at 2019-08-23 19:56:01 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 177)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.0ms | Allocations: 5573)
+
+
+Started GET "/prompts" for ::1 at 2019-08-23 19:56:03 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  Rendered prompts/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 103)
+Completed 200 OK in 13ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 6167)
+
+
+Started GET "/prompts" for ::1 at 2019-08-23 20:00:21 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (8.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 389.4ms | Allocations: 155857)
+Completed 500 Internal Server Error in 394ms (ActiveRecord: 24.9ms | Allocations: 157084)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `prompts' for #<#<Class:0x00007fc6235ea6a0>:0x00007fc6235e8dc8>
+Did you mean?  prompt
+               @prompts):
+     9: 
+    10:     <div>
+    11:   <% @prompts.each do |prompt| %>
+    12:   <h2><%= prompts.writing_prompt%></h2>
+    13:   <% end %>
+    14:     </div>
+    15: 
+  
+app/views/prompts/index.html.erb:12
+app/views/prompts/index.html.erb:11
+Started GET "/prompts" for ::1 at 2019-08-23 20:00:24 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 343.7ms | Allocations: 152573)
+Completed 500 Internal Server Error in 345ms (ActiveRecord: 0.3ms | Allocations: 153055)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `prompts' for #<#<Class:0x00007fc6235ea6a0>:0x00007fc6235632b8>
+Did you mean?  prompt
+               @prompts):
+     9: 
+    10:     <div>
+    11:   <% @prompts.each do |prompt| %>
+    12:   <h2><%= prompts.writing_prompt%></h2>
+    13:   <% end %>
+    14:     </div>
+    15: 
+  
+app/views/prompts/index.html.erb:12
+app/views/prompts/index.html.erb:11
+Started GET "/prompts" for ::1 at 2019-08-23 20:00:38 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 822)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.5ms | Allocations: 6207)
+
+
