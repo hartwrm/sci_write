@@ -16,25 +16,27 @@ class CrowdStoriesController < ApplicationController
   redirect_to prompt_path(@prompt)
   end
 
+  def edit
+    @crowd_story = CrowdStory.find(params[:id])
+  end
+
   # PATCH/PUT /crowd_stories/1
   def update
-    if @crowd_story.update(crowd_story_params)
-      render json: @crowd_story
-    else
-      render json: @crowd_story.errors, status: :unprocessable_entity
-    end
+    @crowd_story = CrowdStory.update(params[:id])
+    redirect_to prompts_path(@prompt)
   end
 
   # DELETE /crowd_stories/1
   def destroy
+    @crowd_story = CrowdStory.find(params[:id])
     @crowd_story.destroy
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_crowd_story
-      @crowd_story = CrowdStory.find(params[:id])
-    end
+    # def set_crowd_story
+    #   @crowd_story = CrowdStory.find(params[:id])
+    # end
 
     # Only allow a trusted parameter "white list" through.
     def crowd_story_params

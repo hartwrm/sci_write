@@ -9,7 +9,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# Prompt.create([{writing_prompt: "It’s not really a fly. If you swat it, they’ll just fine you and send two more."}, {writing_prompt: "We’re headed to Madam Maxime’s at the edge of the universe."}, {writing_prompt: "Why grieve when you can keep your loved one encased in Forever Glass™?"}, {writing_prompt: "A group of intelligence-enhanced lab animals must find a way to communicate before their turn in the euthanization chamber."}])
+Prompt.create([{writing_prompt: "It’s not really a fly. If you swat it, they’ll just fine you and send two more."}, {writing_prompt: "We’re headed to Madam Maxime’s at the edge of the universe."}, {writing_prompt: "Why grieve when you can keep your loved one encased in Forever Glass™?"}, {writing_prompt: "A group of intelligence-enhanced lab animals must find a way to communicate before their turn in the euthanization chamber."}])
 #
 #
 # CrowdStory.create([
@@ -18,6 +18,6 @@
 #   {story: "Prologue: Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.", prompt_id: 2},
 #   {story: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", prompt_id: 2}])
 
-ImagePost.create([{title: "testing", image:"testImage"}])
+# ImagePost.create([{title: "testing", image:"testImage"}])
 
 p "seeded db"
