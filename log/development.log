@@ -12535,3 +12535,53 @@ Processing by ImagesController#show as HTML
 Completed 200 OK in 18ms (Views: 9.6ms | ActiveRecord: 0.8ms | Allocations: 7909)
 
 
+Started GET "/images/1" for ::1 at 2019-08-28 21:37:54 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+Completed 200 OK in 29ms (Views: 14.4ms | ActiveRecord: 3.3ms | Allocations: 12193)
+
+
+Started GET "/images" for ::1 at 2019-08-28 21:37:58 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 69)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 6314)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 21:38:01 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 22.1ms | Allocations: 5672)
+  Rendered images/new.html.erb within layouts/application (Duration: 22.7ms | Allocations: 5769)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.0ms | Allocations: 11919)
+
+
+Started POST "/images" for ::1 at 2019-08-28 21:38:21 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"/7gBvW/qPLT/lfdKv0q3+HdjCWUIz8Qh9UX3ccS9Iip6mgPZlRH2azrSjaQEYHt5arFoZRyHfMJ+LPzQyD55TA==", "image"=>{"title"=>"android", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007fb2f3416e70 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190828-7407-15e5xew.jpeg>, @original_filename="android.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"android.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/images_controller.rb:33:in `block in create'
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("title", "imagedata", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "android"], ["imagedata", "android.jpeg"], ["created_at", "2019-08-29 01:38:22.666597"], ["updated_at", "2019-08-29 01:38:22.666597"]]
+  ↳ app/controllers/images_controller.rb:33:in `block in create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/images_controller.rb:33:in `block in create'
+Redirected to http://localhost:3000/images/2
+Redirected to 
+Completed 500 Internal Server Error in 2145ms (ActiveRecord: 1.0ms | Allocations: 40842)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/images_controller.rb:41:in `create'
+Started GET "/images" for ::1 at 2019-08-28 21:38:55 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 69)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 8341)
+
+
