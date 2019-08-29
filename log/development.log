@@ -11520,3 +11520,852 @@ Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 
 ArgumentError (Missing required arguments: aws_access_key_id, aws_secret_access_key):
   
 app/controllers/images_controller.rb:28:in `create'
+Started GET "/images" for ::1 at 2019-08-28 20:04:30 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 69)
+Completed 200 OK in 18ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 8237)
+
+
+Started GET "/" for ::1 at 2019-08-28 20:04:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 221)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 6978)
+
+
+Started GET "/images" for ::1 at 2019-08-28 20:04:37 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 67)
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 6296)
+
+
+Started GET "/images" for ::1 at 2019-08-28 20:09:18 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 196)
+Completed 200 OK in 22ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 9203)
+
+
+Started GET "/" for ::1 at 2019-08-28 20:09:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 218)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 6974)
+
+
+Started GET "/images" for ::1 at 2019-08-28 20:09:26 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 6299)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 20:09:27 -0400
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 0.0ms | Allocations: 50557)
+
+
+  
+NoMethodError (undefined method `set_s3_direct_post' for #<ImagesController:0x00007fee1c2cb660>
+Did you mean?  set_response!):
+  
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:182:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:183:in `block in halting_and_conditional'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/images" for ::1 at 2019-08-28 20:11:35 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 69)
+Completed 200 OK in 20ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 8299)
+
+
+Started GET "/images" for ::1 at 2019-08-28 20:11:36 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 61)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 6292)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 20:11:37 -0400
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.0ms | Allocations: 50579)
+
+
+  
+NoMethodError (undefined method `set_s3_direct_post' for #<ImagesController:0x00007fee1d010de8>
+Did you mean?  set_response!):
+  
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:182:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:183:in `block in halting_and_conditional'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/images" for ::1 at 2019-08-28 20:11:42 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 61)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 6298)
+
+
+Started GET "/" for ::1 at 2019-08-28 20:11:43 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 76)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 6417)
+
+
+Started GET "/" for ::1 at 2019-08-28 20:13:48 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 530)
+Completed 200 OK in 1326ms (Views: 1315.8ms | ActiveRecord: 0.0ms | Allocations: 1524949)
+
+
+Started GET "/images" for ::1 at 2019-08-28 20:13:51 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 210)
+Completed 200 OK in 62ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 11155)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 20:13:52 -0400
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 0.0ms | Allocations: 50588)
+
+
+  
+NoMethodError (undefined method `set_s3_direct_post' for #<ImagesController:0x00007fa26847c658>
+Did you mean?  set_response!):
+  
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:182:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:183:in `block in halting_and_conditional'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/images" for ::1 at 2019-08-28 20:15:25 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 69)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 8342)
+
+
+Started GET "/images" for ::1 at 2019-08-28 20:15:27 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 61)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 6288)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 20:15:28 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 57.3ms | Allocations: 20502)
+  Rendered images/new.html.erb within layouts/application (Duration: 65.5ms | Allocations: 20864)
+Completed 200 OK in 106ms (Views: 74.0ms | ActiveRecord: 19.5ms | Allocations: 30872)
+
+
+Started POST "/images" for ::1 at 2019-08-28 20:15:37 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"3Pfj4nb6WQQEB+qQjJWOMC4iaQuYhcE0g3IEgVjItjZZ1eGGjAGT28FAkH43v0KxM/AIC4zNedcIGw8gVEvtUA==", "image"=>{"title"=>"walker", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007fa26e61d510 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190828-5742-76wawk.jpg>, @original_filename="walker.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"walker.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1353)
+
+
+  
+ArgumentError (Missing required arguments: aws_access_key_id, aws_secret_access_key):
+  
+app/controllers/images_controller.rb:30:in `create'
+Started GET "/" for ::1 at 2019-08-28 20:18:46 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 76)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 6418)
+
+
+Started GET "/prompts" for ::1 at 2019-08-28 20:19:09 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (2.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 18.3ms | Allocations: 4352)
+Completed 200 OK in 1484ms (Views: 1461.7ms | ActiveRecord: 7.9ms | Allocations: 1530351)
+
+
+Started GET "/prompts/4" for ::1 at 2019-08-28 20:19:12 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (3.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.8ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 114.7ms | Allocations: 32201)
+Completed 200 OK in 143ms (Views: 115.8ms | ActiveRecord: 13.6ms | Allocations: 39806)
+
+
+Started GET "/prompts" for ::1 at 2019-08-28 20:19:14 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (4.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 821)
+Completed 200 OK in 37ms (Views: 31.5ms | ActiveRecord: 4.5ms | Allocations: 7067)
+
+
+Started GET "/welcome" for ::1 at 2019-08-28 20:19:16 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 226)
+Completed 200 OK in 39ms (Views: 28.8ms | ActiveRecord: 0.0ms | Allocations: 7025)
+
+
+Started GET "/images" for ::1 at 2019-08-28 20:19:17 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 203)
+Completed 200 OK in 52ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 10921)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 20:19:19 -0400
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.0ms | Allocations: 50583)
+
+
+  
+NoMethodError (undefined method `set_s3_direct_post' for #<ImagesController:0x00007fcefd3d9e50>
+Did you mean?  set_response!):
+  
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:182:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:183:in `block in halting_and_conditional'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/images/new" for ::1 at 2019-08-28 20:23:33 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 15.1ms | Allocations: 6611)
+  Rendered images/new.html.erb within layouts/application (Duration: 16.9ms | Allocations: 6978)
+Completed 200 OK in 45ms (Views: 31.0ms | ActiveRecord: 3.2ms | Allocations: 18795)
+
+
+Started POST "/images" for ::1 at 2019-08-28 20:24:06 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"hG6uCNCSJ9O1R9AhI2KCIPsdTV/kTHhqtatjOeigT1d4VxXjgxVb4AWvSWqiKGnFdJjZpkm80AQSl3aIvbMc6g==", "image"=>{"title"=>"dystopia", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007fcefc98a580 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190828-5809-1x9pdk7.jpg>, @original_filename="dystopia.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"dystopia.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1312)
+
+
+  
+ArgumentError (Missing required arguments: aws_access_key_id, aws_secret_access_key):
+  
+app/controllers/images_controller.rb:30:in `create'
+Started GET "/images" for ::1 at 2019-08-28 20:29:35 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 508)
+Completed 200 OK in 1223ms (Views: 1198.8ms | ActiveRecord: 0.0ms | Allocations: 1529025)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 20:29:38 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 59.8ms | Allocations: 20472)
+  Rendered images/new.html.erb within layouts/application (Duration: 62.8ms | Allocations: 20847)
+Completed 200 OK in 98ms (Views: 72.0ms | ActiveRecord: 10.1ms | Allocations: 30843)
+
+
+Started POST "/images" for ::1 at 2019-08-28 20:29:47 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"CZRN2HRKlai6q2Yxfv1TpfSiKrLY3EhqZVIC7ZKUz4KMtk+8jrFfd3/sHN/F158k6XBLssyU8InuOwlMnheU5A==", "image"=>{"title"=>"pyramid", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007f80931d0c48 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190828-5916-k9uchq.jpeg>, @original_filename="pyramid.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"pyramid.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1375)
+
+
+  
+ArgumentError (Missing required arguments: aws_access_key_id, aws_secret_access_key):
+  
+app/controllers/images_controller.rb:30:in `create'
+Started GET "/" for ::1 at 2019-08-28 20:31:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 226)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 7009)
+
+
+Started GET "/" for ::1 at 2019-08-28 20:34:40 -0400
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 530)
+Completed 200 OK in 1447ms (Views: 1436.9ms | ActiveRecord: 0.0ms | Allocations: 1524956)
+
+
+Started GET "/images" for ::1 at 2019-08-28 20:34:44 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 210)
+Completed 200 OK in 29ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 11076)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 20:34:44 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 39.4ms | Allocations: 20471)
+  Rendered images/new.html.erb within layouts/application (Duration: 40.6ms | Allocations: 20839)
+Completed 200 OK in 69ms (Views: 48.1ms | ActiveRecord: 10.7ms | Allocations: 30834)
+
+
+Started POST "/images" for ::1 at 2019-08-28 20:34:59 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"VYcvpznRdBvgoNEMRNYbbghQhmy2BZMISb+iqiiQFRDQpS3Dwyq+xCXnq+L//NfvFYLnbKJNK+vC1qkLJBNOdg==", "image"=>{"title"=>"landscape", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007fdfb1757ae0 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190828-6391-1lnxsj0.jpg>, @original_filename="dystopia.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"dystopia.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1366)
+
+
+  
+ArgumentError (Missing required arguments: aws_access_key_id, aws_secret_access_key):
+  
+app/controllers/images_controller.rb:30:in `create'
+Started GET "/" for ::1 at 2019-08-28 20:36:23 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 75)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.0ms | Allocations: 6314)
+
+
+Started GET "/" for ::1 at 2019-08-28 20:41:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 69)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 6287)
+
+
+Started GET "/images" for ::1 at 2019-08-28 20:41:19 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 63)
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 6305)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 20:41:20 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 25.1ms | Allocations: 5667)
+  Rendered images/new.html.erb within layouts/application (Duration: 25.9ms | Allocations: 5764)
+Completed 200 OK in 42ms (Views: 38.9ms | ActiveRecord: 0.0ms | Allocations: 11920)
+
+
+Started POST "/images" for ::1 at 2019-08-28 20:41:27 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"bHz1c9rlyJ2SOVFx8f9TUwa3OovuC/MPkQ7bNOzB3JzpXvcXIB4CQld+K59K1Z/SG2Vbi/pDS+waZ9CV4EKH+g==", "image"=>{"title"=>"AI", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007fdfb35a8e18 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190828-6391-1dmuwcz.jpeg>, @original_filename="AI.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"AI.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1291)
+
+
+  
+ArgumentError (Missing required arguments: aws_access_key_id, aws_secret_access_key):
+  
+app/controllers/images_controller.rb:30:in `create'
+Started GET "/" for ::1 at 2019-08-28 20:45:28 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 69)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.0ms | Allocations: 6287)
+
+
+Started GET "/" for ::1 at 2019-08-28 20:59:09 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 530)
+Completed 200 OK in 1215ms (Views: 1202.9ms | ActiveRecord: 0.0ms | Allocations: 1524953)
+
+
+Started GET "/prompts" for ::1 at 2019-08-28 20:59:12 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 4061)
+Completed 200 OK in 41ms (Views: 15.4ms | ActiveRecord: 5.4ms | Allocations: 12450)
+
+
+Started GET "/prompts/3" for ::1 at 2019-08-28 20:59:14 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.9ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 87.4ms | Allocations: 32145)
+Completed 200 OK in 102ms (Views: 90.3ms | ActiveRecord: 5.1ms | Allocations: 39751)
+
+
+Started GET "/prompts" for ::1 at 2019-08-28 20:59:15 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 821)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 0.5ms | Allocations: 7065)
+
+
+Started GET "/prompts/2" for ::1 at 2019-08-28 20:59:16 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPrompt Load (4.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (1.2ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 23.2ms | Allocations: 6330)
+Completed 200 OK in 43ms (Views: 33.0ms | ActiveRecord: 5.6ms | Allocations: 13029)
+
+
+Started GET "/prompts" for ::1 at 2019-08-28 20:59:21 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:11
+  Rendered prompts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 812)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.4ms | Allocations: 7050)
+
+
+Started GET "/welcome" for ::1 at 2019-08-28 20:59:22 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 75)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 6293)
+
+
+Started GET "/images" for ::1 at 2019-08-28 20:59:23 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 202)
+Completed 200 OK in 32ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 10837)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 20:59:24 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 15.6ms | Allocations: 6583)
+  Rendered images/new.html.erb within layouts/application (Duration: 18.0ms | Allocations: 6950)
+Completed 200 OK in 46ms (Views: 26.4ms | ActiveRecord: 8.1ms | Allocations: 16572)
+
+
+Started POST "/images" for ::1 at 2019-08-28 20:59:32 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"CBjND2LvEj5QORsollX2xOinJzNc5VDiwfOy78UGbRCNOs9rmBTY4ZV+YcYtfzpF9XVGM0it6AFKmrlOyYU2dg==", "image"=>{"title"=>"Airship", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007fd9d3655310 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190828-6771-1u288.jpg>, @original_filename="airship.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"airship.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1346)
+
+
+  
+ArgumentError (Missing required arguments: aws_access_key_id, aws_secret_access_key):
+  
+app/controllers/images_controller.rb:30:in `create'
+Started GET "/" for ::1 at 2019-08-28 21:10:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 76)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 6436)
+
+
+Started GET "/" for ::1 at 2019-08-28 21:10:33 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 69)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.0ms | Allocations: 6283)
+
+
+Started GET "/" for ::1 at 2019-08-28 21:10:35 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 69)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 6282)
+
+
+Started GET "/images" for ::1 at 2019-08-28 21:10:39 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 69)
+Completed 200 OK in 36ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 8328)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 21:10:41 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 12.4ms | Allocations: 5726)
+  Rendered images/new.html.erb within layouts/application (Duration: 13.8ms | Allocations: 5823)
+Completed 200 OK in 31ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 15205)
+
+
+Started POST "/images" for ::1 at 2019-08-28 21:10:49 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"TiAi1HBgGF0z+AYfHl5szHJRm9zNHVYiKnuMLDa3FAvLAiCwipvSgva/fPGldKBNb4P63NlV7sGhEoeNOjRPbQ==", "image"=>{"title"=>"cyberpunk", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007fd9db4d2e18 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190828-6771-gczo31.jpeg>, @original_filename="cyberpunk.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"cyberpunk.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1293)
+
+
+  
+ArgumentError (Missing required arguments: aws_access_key_id, aws_secret_access_key):
+  
+app/controllers/images_controller.rb:30:in `create'
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1 LIMIT $2[0m  [["prompt_id", 1], ["LIMIT", 11]]
+Started GET "/images" for ::1 at 2019-08-28 21:14:51 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 69)
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 8298)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 21:14:53 -0400
+Processing by ImagesController#new as HTML
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 0.0ms | Allocations: 50554)
+
+
+  
+NoMethodError (undefined method `set_s3_direct_post' for #<ImagesController:0x00007fd9d96e4690>
+Did you mean?  set_response!):
+  
+activesupport (6.0.0) lib/active_support/callbacks.rb:429:in `block in make_lambda'
+activesupport (6.0.0) lib/active_support/callbacks.rb:182:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.0) lib/active_support/callbacks.rb:183:in `block in halting_and_conditional'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `block in invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `each'
+activesupport (6.0.0) lib/active_support/callbacks.rb:514:in `invoke_before'
+activesupport (6.0.0) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PUT "/__web_console/repl_sessions/bb05b81ad7d57271f1fc79ea92fde887" for ::1 at 2019-08-28 21:15:10 -0400
+Started PUT "/__web_console/repl_sessions/bb05b81ad7d57271f1fc79ea92fde887" for ::1 at 2019-08-28 21:15:20 -0400
