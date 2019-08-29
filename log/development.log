@@ -12369,3 +12369,169 @@ puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
 Started PUT "/__web_console/repl_sessions/bb05b81ad7d57271f1fc79ea92fde887" for ::1 at 2019-08-28 21:15:10 -0400
 Started PUT "/__web_console/repl_sessions/bb05b81ad7d57271f1fc79ea92fde887" for ::1 at 2019-08-28 21:15:20 -0400
+Started GET "/" for ::1 at 2019-08-28 21:19:30 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 530)
+Completed 200 OK in 1585ms (Views: 1571.6ms | ActiveRecord: 0.0ms | Allocations: 1524951)
+
+
+Started GET "/images" for ::1 at 2019-08-28 21:19:36 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 210)
+Completed 200 OK in 49ms (Views: 30.6ms | ActiveRecord: 0.0ms | Allocations: 11072)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 21:19:37 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 53.4ms | Allocations: 20472)
+  Rendered images/new.html.erb within layouts/application (Duration: 55.7ms | Allocations: 20843)
+Completed 200 OK in 86ms (Views: 63.3ms | ActiveRecord: 11.4ms | Allocations: 30837)
+
+
+Started POST "/images" for ::1 at 2019-08-28 21:19:45 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"Ub7NsBgNh+9hjaB9sO75EgVaNYmW1ChyWWxgX2bdhY/UnM/U4vZNMKTK2pMLxDWTGIhUiYKckJHSBWv+al7e6Q==", "image"=>{"title"=>"cyberpunk", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007f9beb9b9ae0 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190828-7049-591xun.jpeg>, @original_filename="cyberpunk.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"cyberpunk.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1363)
+
+
+  
+ArgumentError (Missing required arguments: aws_access_key_id, aws_secret_access_key):
+  
+app/controllers/images_controller.rb:30:in `create'
+Started PUT "/__web_console/repl_sessions/80a0f8c1fc76b4a6529c6a9578ac2fb0" for ::1 at 2019-08-28 21:19:56 -0400
+Started PUT "/__web_console/repl_sessions/80a0f8c1fc76b4a6529c6a9578ac2fb0" for ::1 at 2019-08-28 21:20:03 -0400
+Started PUT "/__web_console/repl_sessions/80a0f8c1fc76b4a6529c6a9578ac2fb0" for ::1 at 2019-08-28 21:20:18 -0400
+Started GET "/images" for ::1 at 2019-08-28 21:22:41 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 64)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.0ms | Allocations: 6335)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 21:22:42 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 19.3ms | Allocations: 5666)
+  Rendered images/new.html.erb within layouts/application (Duration: 19.8ms | Allocations: 5763)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.0ms | Allocations: 11918)
+
+
+Started POST "/images" for ::1 at 2019-08-28 21:22:48 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"qI0/nYmcGDBQHOFkedTvz/HE5BnxVI+Kj1zqqQMjGh4trz35c2fS75Vbm4rC/iNO7BaFGeUcN2kENeEID6BBeA==", "image"=>{"title"=>"AI", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007f9beaf4a550 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190828-7049-1kvace9.jpeg>, @original_filename="AI.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"AI.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1279)
+
+
+  
+ArgumentError (Missing required arguments: aws_access_key_id, aws_secret_access_key):
+  
+app/controllers/images_controller.rb:30:in `create'
+Started POST "/__web_console/repl_sessions/633a725f4f7e10baf6849a9c34778d3b/trace" for ::1 at 2019-08-28 21:23:07 -0400
+Started POST "/__web_console/repl_sessions/633a725f4f7e10baf6849a9c34778d3b/trace" for ::1 at 2019-08-28 21:23:08 -0400
+Started GET "/images" for ::1 at 2019-08-28 21:28:59 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 61)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 6289)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 21:29:01 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 22.2ms | Allocations: 5641)
+  Rendered images/new.html.erb within layouts/application (Duration: 23.0ms | Allocations: 5738)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms | Allocations: 11882)
+
+
+Started POST "/images" for ::1 at 2019-08-28 21:29:08 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"htfXa/4WpM428FpxgE5TaNwIgm9YCqF0alVOrT2dfasD9dUPBO1uEfO3IJ87ZJ/pwdrjb0xCGZfhPEUMMR4mzQ==", "image"=>{"title"=>"cyberpunk", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007f9beb0e9168 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190828-7049-plwnji.jpeg>, @original_filename="cyberpunk.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"cyberpunk.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1262)
+
+
+  
+ArgumentError (Missing required arguments: aws_access_key_id, aws_secret_access_key):
+  
+app/controllers/images_controller.rb:30:in `create'
+Started GET "/images" for ::1 at 2019-08-28 21:31:07 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 61)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 6286)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 21:31:08 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 35.6ms | Allocations: 5638)
+  Rendered images/new.html.erb within layouts/application (Duration: 35.9ms | Allocations: 5735)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.0ms | Allocations: 11879)
+
+
+Started POST "/images" for ::1 at 2019-08-28 21:31:15 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"nUWB0Onv2Gi8zIDP+aCP4AbO2UJeONjhz9RkmMhAKoQYZ4O0ExQSt3mL+iFCikNhGxy4QkpwYAJEvW85xMNx4g==", "image"=>{"title"=>"pyramid", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007f9bec802f98 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190828-7049-q7k80f.jpeg>, @original_filename="pyramid.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"pyramid.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 1264)
+
+
+  
+ArgumentError (Missing required arguments: aws_access_key_id, aws_secret_access_key):
+  
+app/controllers/images_controller.rb:30:in `create'
+Started GET "/" for ::1 at 2019-08-28 21:31:28 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 75)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms | Allocations: 6297)
+
+
+Started GET "/" for ::1 at 2019-08-28 21:34:15 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 532)
+Completed 200 OK in 1221ms (Views: 1211.5ms | ActiveRecord: 0.0ms | Allocations: 1524953)
+
+
+Started GET "/images" for ::1 at 2019-08-28 21:34:17 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 210)
+Completed 200 OK in 33ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 11079)
+
+
+Started GET "/images/new" for ::1 at 2019-08-28 21:34:18 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 40.5ms | Allocations: 20481)
+  Rendered images/new.html.erb within layouts/application (Duration: 42.1ms | Allocations: 20850)
+Completed 200 OK in 73ms (Views: 50.8ms | ActiveRecord: 11.1ms | Allocations: 30849)
+
+
+Started POST "/images" for ::1 at 2019-08-28 21:34:24 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"KNrr+F7R7+2IPbSfpRP9PNHZmN0sGnbDXpTzTTOlxG6t+OmcpColMk16znEeOTG9zAv53ThSziDV/fjsPyafCA==", "image"=>{"title"=>"AI", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007fb2f6fb06c0 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190828-7407-d72y93.jpeg>, @original_filename="AI.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"AI.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/images_controller.rb:33:in `block in create'
+  [1m[36mImage Create (5.3ms)[0m  [1m[32mINSERT INTO "images" ("title", "imagedata", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "AI"], ["imagedata", "AI.jpeg"], ["created_at", "2019-08-29 01:34:27.007029"], ["updated_at", "2019-08-29 01:34:27.007029"]]
+  ↳ app/controllers/images_controller.rb:33:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/images_controller.rb:33:in `block in create'
+Redirected to http://localhost:3000/images/1
+Completed 302 Found in 3210ms (ActiveRecord: 6.2ms | Allocations: 69622)
+
+
+Started GET "/images/1" for ::1 at 2019-08-28 21:34:28 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 189)
+Completed 200 OK in 18ms (Views: 9.6ms | ActiveRecord: 0.8ms | Allocations: 7909)
+
+
