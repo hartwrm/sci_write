@@ -12,13 +12,13 @@
     <div class="container-prompt">
       <div class="prompt">
         <% @prompts.each do |prompt| %>
-        <h2 class="writing-prompt"><%= link_to prompt.writing_prompt, prompt_path(prompt)%></h2>
+        <h2 class="writing-prompt"><%= link_to prompt.writing_prompt, prompt_path(prompt), class: "text-link" %></h2>
         <% end %>
       </div>
     </div>
     <br>
     <div class="foot">
-      <%= link_to "Home", welcome_index_url %>
+      <%= link_to "Home", welcome_index_url, class: "back-link" %>
     </div>
 
   </body>

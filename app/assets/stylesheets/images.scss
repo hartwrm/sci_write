@@ -1,3 +1,49 @@
 // Place all the styles related to the images controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.image-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.image-links, {
+  background-color: black;
+  opacity: .9;
+  padding: 15px;
+  border: 1px solid cyan;
+  margin-top: 3%;
+}
+
+.image-links:hover{
+  background-color: cyan;
+  opacity: 1.0;
+  border: 1px solid black;
+}
+
+.text-link{
+  font-family: "Ultra";
+  color: cyan;
+  text-decoration: none;
+  font-size: 36px;
+}
+
+.text-link:hover, .back-link:hover{
+  background-color: cyan;
+  color: black;
+}
+
+
+.image-large{
+  background-color: black;
+  padding: 20px;
+  border: 1px ridge cyan;
+}
+
+.image-title{
+  background-color: black;
+  opacity: .8;
+  border: 1px solid cyan;
+}

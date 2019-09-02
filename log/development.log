@@ -14714,3 +14714,1845 @@ Processing by PromptsController#index as HTML
 Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.4ms | Allocations: 8988)
 
 
+Started GET "/prompts/1" for ::1 at 2019-09-02 13:51:02 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.4ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 25.7ms | Allocations: 6234)
+Completed 200 OK in 49ms (Views: 43.8ms | ActiveRecord: 1.4ms | Allocations: 14860)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 13:52:26 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 16.5ms | Allocations: 6563)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 0.8ms | Allocations: 16132)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 13:53:21 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 12.2ms | Allocations: 6242)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.8ms | Allocations: 19601)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  color": expected ";", was ": cyan;"):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/global.scss:84
+app/views/layouts/application.html.erb:8
+Started GET "/prompts/1" for ::1 at 2019-09-02 13:53:41 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.7ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 25.8ms | Allocations: 6239)
+Completed 200 OK in 119ms (Views: 112.7ms | ActiveRecord: 1.7ms | Allocations: 32742)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 13:54:30 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.2ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 15.8ms | Allocations: 6234)
+Completed 200 OK in 94ms (Views: 91.7ms | ActiveRecord: 0.5ms | Allocations: 32464)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 13:55:14 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 16.0ms | Allocations: 6234)
+Completed 200 OK in 81ms (Views: 77.2ms | ActiveRecord: 0.7ms | Allocations: 32357)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 13:56:05 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 15.5ms | Allocations: 6234)
+Completed 200 OK in 87ms (Views: 83.2ms | ActiveRecord: 0.5ms | Allocations: 32835)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 13:56:40 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.4ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 19.6ms | Allocations: 6234)
+Completed 200 OK in 95ms (Views: 91.0ms | ActiveRecord: 0.9ms | Allocations: 34511)
+
+
+Started POST "/prompts/1/crowd_stories" for ::1 at 2019-09-02 13:58:10 -0400
+Processing by CrowdStoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"NwtQvy+Os5EZPBatlWROOUX6anRK43+Ymwxm2XN1fyfLMutUfAnPoqnUj+YULqXcyn/+jecT1/Y8MHNoJmYsmg==", "crowd_story"=>{"title"=>"Testing", "story"=>"test 124 4t45645"}, "commit"=>"Add to Story", "prompt_id"=>"1"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/crowd_stories_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/crowd_stories_controller.rb:15:in `create'
+  [1m[36mCrowdStory Create (2.3ms)[0m  [1m[32mINSERT INTO "crowd_stories" ("story", "created_at", "updated_at", "prompt_id", "title") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["story", "test 124 4t45645"], ["created_at", "2019-09-02 17:58:10.623859"], ["updated_at", "2019-09-02 17:58:10.623859"], ["prompt_id", 1], ["title", "Testing"]]
+  ↳ app/controllers/crowd_stories_controller.rb:15:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/crowd_stories_controller.rb:15:in `create'
+Redirected to http://localhost:3000/prompts/1
+Completed 302 Found in 12ms (ActiveRecord: 3.8ms | Allocations: 3650)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 13:58:10 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 12.3ms | Allocations: 6588)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.6ms | Allocations: 16215)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 13:58:50 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (2.1ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 26.2ms | Allocations: 6593)
+Completed 200 OK in 48ms (Views: 35.2ms | ActiveRecord: 3.5ms | Allocations: 16157)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 13:59:24 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (1.0ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:11
+  Rendered prompts/show.html.erb within layouts/application (Duration: 54.7ms | Allocations: 6597)
+Completed 200 OK in 133ms (Views: 122.1ms | ActiveRecord: 1.6ms | Allocations: 16158)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 13:59:55 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 18.0ms | Allocations: 6594)
+Completed 200 OK in 48ms (Views: 41.9ms | ActiveRecord: 0.7ms | Allocations: 16160)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:00:13 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.8ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 46.9ms | Allocations: 6603)
+Completed 200 OK in 102ms (Views: 78.6ms | ActiveRecord: 2.1ms | Allocations: 16174)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:00:41 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1009)
+Completed 200 OK in 53ms (Views: 49.3ms | ActiveRecord: 1.3ms | Allocations: 9324)
+
+
+Started GET "/prompts/2" for ::1 at 2019-09-02 14:01:17 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPrompt Load (2.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 21.1ms | Allocations: 6213)
+Completed 200 OK in 38ms (Views: 32.5ms | ActiveRecord: 2.5ms | Allocations: 14841)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:01:28 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 812)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 1.2ms | Allocations: 8991)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:01:31 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 19.5ms | Allocations: 6258)
+Completed 200 OK in 61ms (Views: 53.3ms | ActiveRecord: 1.1ms | Allocations: 14882)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:02:49 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1008)
+Completed 200 OK in 39ms (Views: 33.6ms | ActiveRecord: 0.9ms | Allocations: 10123)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 14:02:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 219)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 8960)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:03:16 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 818)
+Completed 200 OK in 85ms (Views: 82.8ms | ActiveRecord: 0.8ms | Allocations: 28636)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:03:16 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 812)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.3ms | Allocations: 9047)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:03:27 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.5ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 37.1ms | Allocations: 6602)
+Completed 200 OK in 61ms (Views: 55.2ms | ActiveRecord: 1.0ms | Allocations: 15368)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:03:29 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 814)
+Completed 200 OK in 72ms (Views: 67.3ms | ActiveRecord: 1.7ms | Allocations: 8991)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:03:53 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1017)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.4ms | Allocations: 10122)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 14:03:55 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 219)
+Completed 200 OK in 54ms (Views: 51.3ms | ActiveRecord: 0.0ms | Allocations: 8952)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:03:57 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (3.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 825)
+Completed 200 OK in 81ms (Views: 74.8ms | ActiveRecord: 3.5ms | Allocations: 9000)
+
+
+Started GET "/prompts/4" for ::1 at 2019-09-02 14:04:07 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 14.8ms | Allocations: 6527)
+Completed 200 OK in 32ms (Views: 26.3ms | ActiveRecord: 0.8ms | Allocations: 15291)
+
+
+Started GET "/prompts/4" for ::1 at 2019-09-02 14:04:16 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 14.7ms | Allocations: 6191)
+Completed 200 OK in 120ms (Views: 116.1ms | ActiveRecord: 0.6ms | Allocations: 34391)
+
+
+Started GET "/prompts/4" for ::1 at 2019-09-02 14:05:04 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.8ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 20.8ms | Allocations: 6193)
+Completed 200 OK in 79ms (Views: 74.6ms | ActiveRecord: 1.1ms | Allocations: 33985)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:05:08 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 821)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.8ms | Allocations: 9056)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:05:11 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (3.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (1.9ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 20.1ms | Allocations: 6267)
+Completed 200 OK in 40ms (Views: 29.4ms | ActiveRecord: 5.5ms | Allocations: 14899)
+
+
+Started GET "/prompts/4" for ::1 at 2019-09-02 14:08:48 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (2.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (3.4ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 30.3ms | Allocations: 6191)
+Completed 200 OK in 231ms (Views: 222.3ms | ActiveRecord: 5.7ms | Allocations: 35196)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:08:49 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 14.5ms | Allocations: 6265)
+Completed 200 OK in 29ms (Views: 25.3ms | ActiveRecord: 0.6ms | Allocations: 14944)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:08:50 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (1.6ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 39.5ms | Allocations: 6265)
+Completed 200 OK in 65ms (Views: 50.5ms | ActiveRecord: 2.6ms | Allocations: 14887)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:09:54 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 27.5ms | Allocations: 6265)
+Completed 200 OK in 136ms (Views: 126.6ms | ActiveRecord: 1.3ms | Allocations: 34176)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:11:08 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.4ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 32.4ms | Allocations: 6265)
+Completed 200 OK in 156ms (Views: 152.3ms | ActiveRecord: 0.7ms | Allocations: 34322)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:12:55 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.7ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 22.1ms | Allocations: 6265)
+Completed 200 OK in 152ms (Views: 140.4ms | ActiveRecord: 2.3ms | Allocations: 42554)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:14:24 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 23.0ms | Allocations: 6265)
+Completed 200 OK in 193ms (Views: 188.8ms | ActiveRecord: 0.5ms | Allocations: 35531)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:15:52 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.2ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 17.2ms | Allocations: 6270)
+Completed 200 OK in 193ms (Views: 183.6ms | ActiveRecord: 1.8ms | Allocations: 35633)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:17:02 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.5ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 36.4ms | Allocations: 6267)
+Completed 200 OK in 135ms (Views: 129.7ms | ActiveRecord: 0.8ms | Allocations: 36046)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:17:18 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.6ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 20.0ms | Allocations: 6265)
+Completed 200 OK in 159ms (Views: 146.5ms | ActiveRecord: 1.1ms | Allocations: 36641)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:18:02 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 33.2ms | Allocations: 6265)
+Completed 200 OK in 190ms (Views: 180.9ms | ActiveRecord: 0.8ms | Allocations: 35841)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:19:17 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.8ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 27.2ms | Allocations: 6265)
+Completed 200 OK in 52ms (Views: 39.1ms | ActiveRecord: 2.4ms | Allocations: 14953)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:19:28 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 819)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 1.5ms | Allocations: 9005)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 14:19:30 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 75)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 8241)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:19:31 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 819)
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 0.5ms | Allocations: 8994)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 14:19:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 69)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 8231)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:19:34 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:6
+  Rendered images/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 2324)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.9ms | Allocations: 11074)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:19:35 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.4ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 35.9ms | Allocations: 6276)
+Completed 200 OK in 66ms (Views: 59.7ms | ActiveRecord: 1.6ms | Allocations: 14905)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 14:19:40 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 23.1ms | Allocations: 5872)
+  Rendered images/new.html.erb within layouts/application (Duration: 26.8ms | Allocations: 6230)
+Completed 200 OK in 42ms (Views: 37.7ms | ActiveRecord: 0.0ms | Allocations: 14466)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:19:44 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:6
+  Rendered images/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 2071)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.4ms | Allocations: 10241)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 14:19:49 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 75)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 8237)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:19:50 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 825)
+Completed 200 OK in 38ms (Views: 33.3ms | ActiveRecord: 1.5ms | Allocations: 9008)
+
+
+Started GET "/prompts/3" for ::1 at 2019-09-02 14:19:51 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (2.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.9ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 19.2ms | Allocations: 6197)
+Completed 200 OK in 45ms (Views: 36.6ms | ActiveRecord: 3.8ms | Allocations: 14827)
+
+
+Started GET "/prompts/3" for ::1 at 2019-09-02 14:20:16 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 14.7ms | Allocations: 6193)
+Completed 200 OK in 111ms (Views: 106.2ms | ActiveRecord: 1.2ms | Allocations: 36607)
+
+
+Started GET "/prompts/3" for ::1 at 2019-09-02 14:20:39 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.2ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 16.5ms | Allocations: 6191)
+Completed 200 OK in 150ms (Views: 144.1ms | ActiveRecord: 0.6ms | Allocations: 35444)
+
+
+Started GET "/prompts/3" for ::1 at 2019-09-02 14:28:44 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.4ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 15.4ms | Allocations: 6237)
+Completed 200 OK in 57ms (Views: 52.9ms | ActiveRecord: 1.2ms | Allocations: 15066)
+
+
+Started GET "/prompts/3" for ::1 at 2019-09-02 14:32:45 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 15.3ms | Allocations: 6191)
+Completed 200 OK in 99ms (Views: 96.3ms | ActiveRecord: 0.6ms | Allocations: 39613)
+
+
+Started GET "/prompts/3" for ::1 at 2019-09-02 14:33:25 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.9ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 31.9ms | Allocations: 6191)
+Completed 200 OK in 180ms (Views: 173.8ms | ActiveRecord: 1.4ms | Allocations: 37945)
+
+
+Started GET "/prompts/3" for ::1 at 2019-09-02 14:34:59 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 16.0ms | Allocations: 6191)
+Completed 200 OK in 144ms (Views: 141.6ms | ActiveRecord: 0.8ms | Allocations: 40041)
+
+
+Started GET "/prompts/3" for ::1 at 2019-09-02 14:35:27 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (1.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (1.6ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 29.6ms | Allocations: 6196)
+Completed 200 OK in 207ms (Views: 195.0ms | ActiveRecord: 2.7ms | Allocations: 39611)
+
+
+Started GET "/prompts/3" for ::1 at 2019-09-02 14:36:00 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 17.9ms | Allocations: 6535)
+Completed 200 OK in 116ms (Views: 110.5ms | ActiveRecord: 0.9ms | Allocations: 40183)
+
+
+Started GET "/prompts/3" for ::1 at 2019-09-02 14:36:09 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (1.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 20.5ms | Allocations: 6199)
+Completed 200 OK in 45ms (Views: 36.7ms | ActiveRecord: 1.8ms | Allocations: 14888)
+
+
+Started GET "/prompts/3" for ::1 at 2019-09-02 14:36:10 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (0.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 16.8ms | Allocations: 6191)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.5ms | Allocations: 14818)
+
+
+Started GET "/prompts/3" for ::1 at 2019-09-02 14:37:47 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPrompt Load (2.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.3ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 3]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 26.5ms | Allocations: 6191)
+Completed 200 OK in 131ms (Views: 123.2ms | ActiveRecord: 3.2ms | Allocations: 39814)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:38:39 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1019)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.4ms | Allocations: 34590)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:38:39 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (4.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 828)
+Completed 200 OK in 47ms (Views: 41.5ms | ActiveRecord: 4.5ms | Allocations: 9067)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 14:38:41 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (0.7ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.8ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 78.7ms | Allocations: 6269)
+Completed 200 OK in 179ms (Views: 168.8ms | ActiveRecord: 1.4ms | Allocations: 14895)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:38:46 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 819)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.9ms | Allocations: 8997)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 14:38:48 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 219)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 8961)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:38:50 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:6
+  Rendered images/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2322)
+Completed 200 OK in 28ms (Views: 22.7ms | ActiveRecord: 0.9ms | Allocations: 11079)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:38:50 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (3.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 825)
+Completed 200 OK in 46ms (Views: 41.4ms | ActiveRecord: 3.3ms | Allocations: 9005)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 14:38:56 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 13.3ms | Allocations: 5874)
+  Rendered images/new.html.erb within layouts/application (Duration: 15.5ms | Allocations: 6232)
+Completed 200 OK in 33ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 14463)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:39:04 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:6
+  Rendered images/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 2071)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.9ms | Allocations: 10242)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:40:16 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2322)
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 0.5ms | Allocations: 11432)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:42:06 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 2367)
+Completed 200 OK in 86ms (Views: 78.6ms | ActiveRecord: 2.5ms | Allocations: 20772)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:42:28 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.1ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 2117)
+Completed 200 OK in 143ms (Views: 139.4ms | ActiveRecord: 2.1ms | Allocations: 19822)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:43:14 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 28.9ms | Allocations: 2109)
+Completed 200 OK in 244ms (Views: 241.5ms | ActiveRecord: 1.7ms | Allocations: 18767)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:46:14 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 2109)
+Completed 200 OK in 113ms (Views: 111.2ms | ActiveRecord: 0.4ms | Allocations: 18728)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:47:06 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 23.3ms | Allocations: 2109)
+Completed 200 OK in 117ms (Views: 114.1ms | ActiveRecord: 0.7ms | Allocations: 19915)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:47:43 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 2109)
+Completed 200 OK in 139ms (Views: 134.5ms | ActiveRecord: 0.5ms | Allocations: 20063)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:47:57 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2109)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.3ms | Allocations: 10330)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:48:10 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 31.3ms | Allocations: 2109)
+Completed 200 OK in 127ms (Views: 125.0ms | ActiveRecord: 0.4ms | Allocations: 10815)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:54:54 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2187)
+Completed 200 OK in 76ms (Views: 73.6ms | ActiveRecord: 0.7ms | Allocations: 21012)
+
+
+Started GET "/images" for ::1 at 2019-09-02 14:55:16 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 16.0ms | Allocations: 2109)
+Completed 200 OK in 93ms (Views: 85.6ms | ActiveRecord: 0.6ms | Allocations: 10332)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 14:57:05 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 224)
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.0ms | Allocations: 8960)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 14:58:20 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 238)
+Completed 200 OK in 182ms (Views: 179.0ms | ActiveRecord: 0.0ms | Allocations: 34170)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 14:58:25 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (8.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 19.0ms | Allocations: 1018)
+Completed 200 OK in 50ms (Views: 39.6ms | ActiveRecord: 8.3ms | Allocations: 9823)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 15:00:41 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.9ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1047)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.9ms | Allocations: 10165)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 15:01:14 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 853)
+Completed 200 OK in 243ms (Views: 234.5ms | ActiveRecord: 0.6ms | Allocations: 34834)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 15:02:04 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (2.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 847)
+Completed 200 OK in 290ms (Views: 285.7ms | ActiveRecord: 2.1ms | Allocations: 34751)
+
+
+Started GET "/prompts/1" for ::1 at 2019-09-02 15:02:07 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPrompt Load (1.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.9ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 1]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 54.7ms | Allocations: 6652)
+Completed 200 OK in 84ms (Views: 72.7ms | ActiveRecord: 3.1ms | Allocations: 15501)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 15:02:11 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 849)
+Completed 200 OK in 62ms (Views: 58.8ms | ActiveRecord: 0.4ms | Allocations: 9027)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 15:02:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 237)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 8967)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:02:15 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2365)
+Completed 200 OK in 31ms (Views: 26.8ms | ActiveRecord: 0.5ms | Allocations: 11112)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 15:02:15 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (6.0ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 853)
+Completed 200 OK in 43ms (Views: 35.5ms | ActiveRecord: 6.0ms | Allocations: 9032)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:03:06 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (1.1ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 376)
+Completed 200 OK in 29ms (Views: 21.6ms | ActiveRecord: 1.1ms | Allocations: 9226)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:03:24 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2112)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.8ms | Allocations: 10282)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:03:32 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2109)
+Completed 200 OK in 84ms (Views: 80.2ms | ActiveRecord: 0.6ms | Allocations: 20524)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:13:33 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.9ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 27.9ms | Allocations: 6482)
+Completed 200 OK in 1687ms (Views: 1652.5ms | ActiveRecord: 9.0ms | Allocations: 1556256)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:14:06 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.2ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 2125)
+Completed 200 OK in 166ms (Views: 162.0ms | ActiveRecord: 1.2ms | Allocations: 20293)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 15:16:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 253)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms | Allocations: 19854)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 15:16:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 89)
+Completed 200 OK in 84ms (Views: 80.6ms | ActiveRecord: 0.0ms | Allocations: 8310)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:16:39 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.6ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 21.1ms | Allocations: 2391)
+Completed 200 OK in 59ms (Views: 54.3ms | ActiveRecord: 1.6ms | Allocations: 11151)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 15:16:39 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 89)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 8251)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 15:16:58 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 81.1ms | Allocations: 20465)
+  Rendered images/new.html.erb within layouts/application (Duration: 98.9ms | Allocations: 20834)
+Completed 200 OK in 123ms (Views: 118.7ms | ActiveRecord: 0.0ms | Allocations: 29094)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 15:18:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 240)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 9341)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 15:19:09 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 12.3ms | Allocations: 5837)
+  Rendered images/new.html.erb within layouts/application (Duration: 13.8ms | Allocations: 6214)
+Completed 200 OK in 62ms (Views: 60.0ms | ActiveRecord: 0.0ms | Allocations: 26245)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 15:19:29 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 14.4ms | Allocations: 5837)
+  Rendered images/new.html.erb within layouts/application (Duration: 18.1ms | Allocations: 6210)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.0ms | Allocations: 15286)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:19:34 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.2ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 2383)
+Completed 200 OK in 36ms (Views: 31.4ms | ActiveRecord: 2.2ms | Allocations: 10696)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 15:19:34 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 32.3ms | Allocations: 5617)
+  Rendered images/new.html.erb within layouts/application (Duration: 33.2ms | Allocations: 5721)
+Completed 200 OK in 86ms (Views: 84.7ms | ActiveRecord: 0.0ms | Allocations: 13807)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 15:19:36 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 237)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 8967)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 15:19:48 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (1.1ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3784)
+Completed 200 OK in 28ms (Views: 17.4ms | ActiveRecord: 3.3ms | Allocations: 13887)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 15:19:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 89)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 8259)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:19:59 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (4.8ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 2139)
+Completed 200 OK in 50ms (Views: 42.2ms | ActiveRecord: 4.8ms | Allocations: 10326)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:20:00 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 384)
+Completed 200 OK in 22ms (Views: 13.1ms | ActiveRecord: 1.1ms | Allocations: 9994)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:20:03 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (5.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 2126)
+Completed 200 OK in 46ms (Views: 39.5ms | ActiveRecord: 5.7ms | Allocations: 10300)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 15:20:07 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 13.5ms | Allocations: 5616)
+  Rendered images/new.html.erb within layouts/application (Duration: 14.0ms | Allocations: 5720)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 13814)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 15:20:21 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 15.4ms | Allocations: 5614)
+  Rendered images/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 5718)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.0ms | Allocations: 24907)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 15:20:24 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 17.8ms | Allocations: 5614)
+  Rendered images/new.html.erb within layouts/application (Duration: 18.4ms | Allocations: 5718)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.0ms | Allocations: 13866)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:21:17 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2124)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.6ms | Allocations: 10778)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:21:17 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2123)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.7ms | Allocations: 10289)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:21:43 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2123)
+Completed 200 OK in 182ms (Views: 180.1ms | ActiveRecord: 0.5ms | Allocations: 22715)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 15:22:20 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 89)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 8309)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 15:22:21 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.5ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 853)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.5ms | Allocations: 9034)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 15:22:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 83)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 8245)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:22:39 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (5.8ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 2123)
+Completed 200 OK in 39ms (Views: 32.4ms | ActiveRecord: 5.8ms | Allocations: 10294)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 15:22:41 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 83)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 8242)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:22:43 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2123)
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.6ms | Allocations: 10288)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:22:44 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 219)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.3ms | Allocations: 8927)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:22:44 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2123)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 2.5ms | Allocations: 10295)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:22:45 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (3.1ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 17.0ms | Allocations: 2123)
+Completed 200 OK in 43ms (Views: 37.6ms | ActiveRecord: 3.1ms | Allocations: 10298)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:23:51 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 387)
+Completed 200 OK in 23ms (Views: 18.9ms | ActiveRecord: 0.6ms | Allocations: 10041)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:24:13 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 2389)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.4ms | Allocations: 11491)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:24:14 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 388)
+Completed 200 OK in 33ms (Views: 23.7ms | ActiveRecord: 0.6ms | Allocations: 9241)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:24:52 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (1.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 397)
+Completed 200 OK in 134ms (Views: 127.5ms | ActiveRecord: 1.4ms | Allocations: 22540)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:26:42 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 398)
+Completed 200 OK in 98ms (Views: 89.8ms | ActiveRecord: 0.7ms | Allocations: 24471)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:27:03 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.2ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 2391)
+Completed 200 OK in 49ms (Views: 45.2ms | ActiveRecord: 2.2ms | Allocations: 11563)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:27:03 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (4.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 401)
+Completed 200 OK in 28ms (Views: 19.9ms | ActiveRecord: 4.5ms | Allocations: 9249)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:27:04 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (3.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 232)
+Completed 200 OK in 67ms (Views: 57.8ms | ActiveRecord: 3.6ms | Allocations: 8942)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:27:28 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 398)
+Completed 200 OK in 25ms (Views: 16.8ms | ActiveRecord: 0.9ms | Allocations: 10046)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:28:35 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 401)
+Completed 200 OK in 128ms (Views: 123.4ms | ActiveRecord: 1.0ms | Allocations: 24351)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:29:03 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (3.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 16.0ms | Allocations: 2386)
+Completed 200 OK in 52ms (Views: 46.0ms | ActiveRecord: 3.7ms | Allocations: 10752)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:29:03 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 233)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.4ms | Allocations: 8939)
+
+
+Started GET "/images/2" for ::1 at 2019-09-02 15:29:04 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mImage Load (1.1ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 232)
+Completed 200 OK in 28ms (Views: 20.5ms | ActiveRecord: 1.1ms | Allocations: 8944)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:29:10 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2123)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.4ms | Allocations: 10293)
+
+
+Started GET "/images/6" for ::1 at 2019-09-02 15:29:12 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 232)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.3ms | Allocations: 8940)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:29:14 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.9ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2123)
+Completed 200 OK in 45ms (Views: 38.6ms | ActiveRecord: 2.9ms | Allocations: 10296)
+
+
+Started GET "/images/4" for ::1 at 2019-09-02 15:29:16 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mImage Load (0.2ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 232)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.2ms | Allocations: 8937)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:29:18 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (3.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 15.2ms | Allocations: 2123)
+Completed 200 OK in 47ms (Views: 41.9ms | ActiveRecord: 3.5ms | Allocations: 10291)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 15:29:25 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 20.0ms | Allocations: 5844)
+  Rendered images/new.html.erb within layouts/application (Duration: 21.8ms | Allocations: 6218)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.0ms | Allocations: 14444)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:29:52 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.3ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2127)
+Completed 200 OK in 46ms (Views: 43.9ms | ActiveRecord: 1.3ms | Allocations: 10301)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:29:53 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 232)
+Completed 200 OK in 47ms (Views: 40.6ms | ActiveRecord: 0.6ms | Allocations: 8940)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:30:13 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.1ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2123)
+Completed 200 OK in 101ms (Views: 97.9ms | ActiveRecord: 1.1ms | Allocations: 25001)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:30:13 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2123)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.7ms | Allocations: 10347)
+
+
+Started GET "/images/2" for ::1 at 2019-09-02 15:30:21 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 232)
+Completed 200 OK in 39ms (Views: 32.2ms | ActiveRecord: 0.9ms | Allocations: 8944)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:30:21 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 2123)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.4ms | Allocations: 10295)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:30:24 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.9ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 2124)
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 2.9ms | Allocations: 10293)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:30:25 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 232)
+Completed 200 OK in 25ms (Views: 19.6ms | ActiveRecord: 0.9ms | Allocations: 8945)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:30:30 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2123)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 1.4ms | Allocations: 10296)
+
+
+Started GET "/images/3" for ::1 at 2019-09-02 15:30:32 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 232)
+Completed 200 OK in 18ms (Views: 13.3ms | ActiveRecord: 0.5ms | Allocations: 8939)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:31:15 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 2393)
+Completed 200 OK in 107ms (Views: 104.5ms | ActiveRecord: 0.9ms | Allocations: 27186)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:31:15 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2131)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.3ms | Allocations: 10358)
+
+
+Started GET "/images/3" for ::1 at 2019-09-02 15:31:16 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 400)
+Completed 200 OK in 38ms (Views: 33.7ms | ActiveRecord: 0.4ms | Allocations: 9251)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:31:16 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2126)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.9ms | Allocations: 10291)
+
+
+Started GET "/images/3" for ::1 at 2019-09-02 15:31:40 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 232)
+Completed 200 OK in 126ms (Views: 121.5ms | ActiveRecord: 0.4ms | Allocations: 23504)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:32:02 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 2123)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 0.6ms | Allocations: 10352)
+
+
+Started GET "/images/3" for ::1 at 2019-09-02 15:32:02 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 232)
+Completed 200 OK in 49ms (Views: 45.1ms | ActiveRecord: 0.3ms | Allocations: 8942)
+
+
+Started GET "/images/1" for ::1 at 2019-09-02 15:32:03 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (1.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 232)
+Completed 200 OK in 22ms (Views: 15.6ms | ActiveRecord: 1.4ms | Allocations: 8941)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:32:06 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 2123)
+Completed 200 OK in 48ms (Views: 43.9ms | ActiveRecord: 1.7ms | Allocations: 10292)
+
+
+Started GET "/images/6" for ::1 at 2019-09-02 15:32:07 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mImage Load (0.9ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 232)
+Completed 200 OK in 27ms (Views: 17.9ms | ActiveRecord: 0.9ms | Allocations: 8944)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:32:09 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 2122)
+Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 0.7ms | Allocations: 10291)
+
+
+Started GET "/images/7" for ::1 at 2019-09-02 15:32:10 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 232)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.3ms | Allocations: 8938)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:32:13 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2123)
+Completed 200 OK in 88ms (Views: 85.9ms | ActiveRecord: 0.4ms | Allocations: 10291)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 15:32:15 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 30.4ms | Allocations: 5845)
+  Rendered images/new.html.erb within layouts/application (Duration: 33.2ms | Allocations: 6226)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.0ms | Allocations: 14458)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:32:19 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2127)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 1.0ms | Allocations: 10297)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 15:32:21 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 240)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 8986)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 15:32:24 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1047)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.6ms | Allocations: 9806)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 15:32:50 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 847)
+Completed 200 OK in 80ms (Views: 77.8ms | ActiveRecord: 0.6ms | Allocations: 22753)
+
+
+Started GET "/prompts/2" for ::1 at 2019-09-02 15:32:58 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPrompt Load (1.2ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (1.0ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 2]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 88.6ms | Allocations: 25436)
+Completed 200 OK in 109ms (Views: 92.0ms | ActiveRecord: 7.2ms | Allocations: 34363)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 15:33:04 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.6ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 849)
+Completed 200 OK in 72ms (Views: 70.6ms | ActiveRecord: 0.6ms | Allocations: 9025)
+
+
+Started GET "/prompts/4" for ::1 at 2019-09-02 15:33:06 -0400
+Processing by PromptsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPrompt Load (0.3ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts" WHERE "prompts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/prompts_controller.rb:21:in `set_prompt'
+  Rendering prompts/show.html.erb within layouts/application
+  [1m[36mCrowdStory Load (0.2ms)[0m  [1m[34mSELECT "crowd_stories".* FROM "crowd_stories" WHERE "crowd_stories"."prompt_id" = $1[0m  [["prompt_id", 4]]
+  ↳ app/views/prompts/show.html.erb:10
+  Rendered prompts/show.html.erb within layouts/application (Duration: 14.3ms | Allocations: 6159)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.5ms | Allocations: 14791)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 15:33:07 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (0.4ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 847)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.4ms | Allocations: 9025)
+
+
+Started GET "/welcome" for ::1 at 2019-09-02 15:33:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 89)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 8258)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:33:10 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2131)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.3ms | Allocations: 10305)
+
+
+Started GET "/prompts" for ::1 at 2019-09-02 15:33:10 -0400
+Processing by PromptsController#index as HTML
+  Rendering prompts/index.html.erb within layouts/application
+  [1m[36mPrompt Load (3.8ms)[0m  [1m[34mSELECT "prompts".* FROM "prompts"[0m
+  ↳ app/views/prompts/index.html.erb:14
+  Rendered prompts/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 847)
+Completed 200 OK in 45ms (Views: 40.5ms | ActiveRecord: 3.8ms | Allocations: 9019)
+
+
+Started GET "/images/5" for ::1 at 2019-09-02 15:33:12 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mImage Load (2.1ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 233)
+Completed 200 OK in 23ms (Views: 16.2ms | ActiveRecord: 2.1ms | Allocations: 8939)
+
+
+Started GET "/images" for ::1 at 2019-09-02 15:33:15 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:8
+  Rendered images/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2123)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.4ms | Allocations: 10293)
+
+

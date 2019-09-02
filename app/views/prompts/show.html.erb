@@ -5,22 +5,22 @@
     <title></title>
   </head>
   <body>
-    <h2><%= @prompt.writing_prompt %></h2>
+    <h2 class="writing-prompt"><%= @prompt.writing_prompt %></h2>
 
     <% @prompt.crowd_stories.each do |crowd_story| %>
-
     <div class="comments">
+
+
     <strong><h3>
       <%=crowd_story.title %>
     </h3></strong>
       <p>
       <%=crowd_story.story %>
     </p>
+    </div>
     <% end %>
 
-    </div>
-
-  <div>
+  <div class="story-form">
     <h3>Add to the Story!</h3>
   <%= simple_form_for [@prompt, @prompt.crowd_stories.build] do |f| %>
   <%=f.input :title %>
@@ -29,7 +29,10 @@
   <%end%>
       </div>
       <br>
-      <%= link_to "Back to Prompts", prompts_path %>
+
+      <div class="foot">
+        <%= link_to "Back to Prompts", prompts_path, class: "back-link"  %>
+      </div>
 
   </body>
 </html>
