@@ -5,16 +5,21 @@
     <title></title>
   </head>
   <body>
-    <h1>Writing Prompts</h1>
+    <div class="title">
+      <h1>Writing Prompts</h1>
+    </div>
 
-    <div>
-  <% @prompts.each do |prompt| %>
-  <h2><%= link_to prompt.writing_prompt, prompt_path(prompt)%></h2>
-  <% end %>
+    <div class="container-prompt">
+      <div class="prompt">
+        <% @prompts.each do |prompt| %>
+        <h2 class="writing-prompt"><%= link_to prompt.writing_prompt, prompt_path(prompt)%></h2>
+        <% end %>
+      </div>
     </div>
     <br>
-
-    <%= link_to "Home", welcome_index_url %>
+    <div class="foot">
+      <%= link_to "Home", welcome_index_url %>
+    </div>
 
   </body>
 </html>

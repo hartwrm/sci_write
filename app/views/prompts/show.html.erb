@@ -25,7 +25,7 @@
   <%= simple_form_for [@prompt, @prompt.crowd_stories.build] do |f| %>
   <%=f.input :title %>
   <%=f.input :story %>
-  <%=f.button :submit %>
+  <%=f.submit "Add to Story" %>
   <%end%>
       </div>
       <br>
