@@ -13185,3 +13185,168 @@ Processing by ImagesController#show as HTML
 Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 0.4ms | Allocations: 6977)
 
 
+Started GET "/images" for ::1 at 2019-09-02 11:32:36 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:6
+  Rendered images/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 4917)
+Completed 200 OK in 34ms (Views: 24.4ms | ActiveRecord: 3.6ms | Allocations: 13129)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 11:32:38 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 23.3ms | Allocations: 5706)
+  Rendered images/new.html.erb within layouts/application (Duration: 24.2ms | Allocations: 5803)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms | Allocations: 11943)
+
+
+Started POST "/images" for ::1 at 2019-09-02 11:32:47 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"tEsFQf7Bqy4jH05MU8XjYZmyOe6lJd/LR1qU1rulL0ExaQclBDph8eZYNKLo7y/ghGBY7rFtZyjMM593tyZ0Jw==", "image"=>{"title"=>"Walker", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007fa0d7483a58 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190902-12440-12nfupm.jpg>, @original_filename="walker.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"walker.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/images_controller.rb:31:in `block in create'
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("title", "imagedata", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Walker"], ["imagedata", "walker.jpg"], ["created_at", "2019-09-02 15:32:52.048694"], ["updated_at", "2019-09-02 15:32:52.048694"]]
+  ↳ app/controllers/images_controller.rb:31:in `block in create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/images_controller.rb:31:in `block in create'
+Redirected to 
+Completed 500 Internal Server Error in 5186ms (ActiveRecord: 1.0ms | Allocations: 107880)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/images_controller.rb:32:in `block (2 levels) in create'
+app/controllers/images_controller.rb:30:in `create'
+Started GET "/images" for ::1 at 2019-09-02 11:35:39 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:6
+  Rendered images/index.html.erb within layouts/application (Duration: 16.1ms | Allocations: 5101)
+Completed 200 OK in 37ms (Views: 27.3ms | ActiveRecord: 4.8ms | Allocations: 13255)
+
+
+Started GET "/images/5" for ::1 at 2019-09-02 11:35:41 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mImage Load (1.2ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 224)
+Completed 200 OK in 31ms (Views: 24.3ms | ActiveRecord: 1.2ms | Allocations: 7066)
+
+
+Started GET "/images" for ::1 at 2019-09-02 11:35:41 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:6
+  Rendered images/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1677)
+Completed 200 OK in 28ms (Views: 23.1ms | ActiveRecord: 0.4ms | Allocations: 7894)
+
+
+Started GET "/images" for ::1 at 2019-09-02 11:35:45 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:6
+  Rendered images/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1677)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.3ms | Allocations: 7899)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 11:35:46 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 25.2ms | Allocations: 5706)
+  Rendered images/new.html.erb within layouts/application (Duration: 25.7ms | Allocations: 5803)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms | Allocations: 11947)
+
+
+Started POST "/images" for ::1 at 2019-09-02 11:36:06 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"VHE/Rd7CYFLU7CsfcGeQpjLqM/hYusiFuBq1ZkgBMZPRUz0hJDmqjRGrUfHLTVwnLzhS+EzycGYzc77HRIJq9Q==", "image"=>{"title"=>"Spaceman", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007fa0d9730948 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190902-12440-kcovb4.jpeg>, @original_filename="spaceman.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"spaceman.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/images_controller.rb:31:in `block in create'
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("title", "imagedata", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Spaceman"], ["imagedata", "spaceman.jpeg"], ["created_at", "2019-09-02 15:36:07.828291"], ["updated_at", "2019-09-02 15:36:07.828291"]]
+  ↳ app/controllers/images_controller.rb:31:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/images_controller.rb:31:in `block in create'
+Completed 500 Internal Server Error in 2232ms (ActiveRecord: 1.8ms | Allocations: 90037)
+
+
+  
+NoMethodError (undefined method `action' for #<ImagesController:0x00007fa0d9731000>
+Did you mean?  action_name):
+  
+app/controllers/images_controller.rb:32:in `block (2 levels) in create'
+app/controllers/images_controller.rb:30:in `create'
+Started GET "/images" for ::1 at 2019-09-02 11:36:32 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:6
+  Rendered images/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 5280)
+Completed 200 OK in 38ms (Views: 26.5ms | ActiveRecord: 5.0ms | Allocations: 13429)
+
+
+Started GET "/images/6" for ::1 at 2019-09-02 11:36:34 -0400
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mImage Load (3.8ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:15:in `show'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 224)
+Completed 200 OK in 30ms (Views: 22.1ms | ActiveRecord: 3.8ms | Allocations: 7082)
+
+
+Started GET "/images" for ::1 at 2019-09-02 11:36:34 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:6
+  Rendered images/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1872)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.3ms | Allocations: 8090)
+
+
+Started GET "/images" for ::1 at 2019-09-02 11:38:56 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:6
+  Rendered images/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 5249)
+Completed 200 OK in 29ms (Views: 20.6ms | ActiveRecord: 3.7ms | Allocations: 13393)
+
+
+Started GET "/images/new" for ::1 at 2019-09-02 11:38:58 -0400
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 10.6ms | Allocations: 5706)
+  Rendered images/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 5803)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 11949)
+
+
+Started POST "/images" for ::1 at 2019-09-02 11:39:09 -0400
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"wnryJOAKzgKYQZaeKbW867NuJQhrlIxpgNRUP+7O1YxHWPBAGvEE3V0G7HCSn3BqrrxECH/cNIoLvV+e4k2O6g==", "image"=>{"title"=>"Spaceship", "imagedata"=>#<ActionDispatch::Http::UploadedFile:0x00007fa0d9763370 @tempfile=#<Tempfile:/var/folders/gr/xzz5nl8x6vg6d7mtj1qc361w0000gn/T/RackMultipart20190902-12440-1vf55xi.jpg>, @original_filename="ship.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image[imagedata]\"; filename=\"ship.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Image"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/images_controller.rb:31:in `block in create'
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("title", "imagedata", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Spaceship"], ["imagedata", "ship.jpg"], ["created_at", "2019-09-02 15:39:12.678043"], ["updated_at", "2019-09-02 15:39:12.678043"]]
+  ↳ app/controllers/images_controller.rb:31:in `block in create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/images_controller.rb:31:in `block in create'
+Redirected to http://localhost:3000/images
+Completed 302 Found in 4129ms (ActiveRecord: 1.8ms | Allocations: 43855)
+
+
+Started GET "/images" for ::1 at 2019-09-02 11:39:13 -0400
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:6
+  Rendered images/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2070)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 0.5ms | Allocations: 8312)
+
+
