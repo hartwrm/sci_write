@@ -1,12 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
+<div class="container">
+  <h2><%= @image.title %></h2>
+  <%= image_tag @image.imagedata.large.url %>
 
-</p>
-
-<p>
-  <%# <%= @image.imagedata.large %> %>
-</p>
+</div>
 
  <%= link_to 'Back', images_path %>

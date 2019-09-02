@@ -20,9 +20,7 @@ class ImagesController < ApplicationController
     @image = Image.new
   end
 
-  # GET /images/1/edit
-  def edit
-  end
+
 
   # POST /images
   # POST /images.json
