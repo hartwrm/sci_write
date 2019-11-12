@@ -41,7 +41,7 @@ gem 'actionpack', '~> 6.0'
 gem 'activemodel', '~> 6.0'
 
 #simple form gem
-gem 'simple_form', '~> 4.1'
+gem 'simple_form', '~> 5.0'
 
 gem 'carrierwave', '~> 2.0'
 
